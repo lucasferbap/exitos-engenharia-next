@@ -1,0 +1,440 @@
+/* =========================================================
+   DESIGN SYSTEM — SITE INSTITUCIONAL
+========================================================= */
+
+/* ===============================
+   BREAKPOINTS (Mobile First)
+================================ */
+$tablet: 768px;
+$desktop: 1024px;
+
+@mixin respond($device) {
+  @if $device == tablet {
+    @media (min-width: $tablet) {
+      @content;
+    }
+  } @else if $device == desktop {
+    @media (min-width: $desktop) {
+      @content;
+    }
+  } @else {
+    @content; // mobile padrão
+  }
+}
+
+/* ===============================
+   CORES
+================================ */
+$color-primary: #1d4ed8;
+$color-secondary: #64748b;
+$color-dark: #0f172a;
+$color-light: #f8fafc;
+$color-gray: #e5e7eb;
+$color-white: #ffffff;
+$color-danger: #dc2626;
+
+/* ===============================
+   FONTES
+================================ */
+$font-primary: "Inter", sans-serif;
+
+$font-size-base: 16px;
+$line-height-base: 1.6;
+
+/* ===============================
+   TIPOGRAFIA — TÍTULOS
+================================ */
+$h1-size-mobile: 32px;
+$h1-size-desktop: 48px;
+
+$h2-size-mobile: 24px;
+$h2-size-desktop: 36px;
+
+$h3-size-mobile: 20px;
+$h3-size-desktop: 28px;
+
+/* ===============================
+   ESPAÇAMENTOS PADRÃO
+================================ */
+$space-xxs: 4px;
+$space-xs: 8px;
+$space-sm: 12px;
+$space-md: 16px;
+$space-lg: 24px;
+$space-xl: 32px;
+$space-xxl: 48px;
+
+/* Espaçamento padrão do H2 para o conteúdo abaixo */
+$h2-spacing-bottom: $space-lg;
+
+/* ===============================
+   RESET BÁSICO
+================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  color: #111;
+  position: relative;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+:where([hidden]) {
+  display: none !important;
+}
+
+* {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* ===============================
+   TITULOS PADRÃO
+================================ */
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: $h1-size-mobile;
+  margin-bottom: $space-lg;
+
+  @include respond(desktop) {
+    font-size: $h1-size-desktop;
+  }
+}
+
+h2 {
+  font-size: $h2-size-mobile;
+  margin-bottom: $h2-spacing-bottom;
+
+  @include respond(desktop) {
+    font-size: $h2-size-desktop;
+  }
+}
+
+h3 {
+  font-size: $h3-size-mobile;
+  margin-bottom: $space-md;
+
+  @include respond(desktop) {
+    font-size: $h3-size-desktop;
+  }
+}
+
+p {
+  margin: 0 0 $space-md 0;
+  color: $color-secondary;
+}
+
+/* ===============================
+   CONTAINER PADRÃO
+================================ */
+.container {
+  width: 100%;
+  padding: 0 $space-md;
+  margin: 0 auto;
+
+  @include respond(tablet) {
+    max-width: 720px;
+  }
+
+  @include respond(desktop) {
+    max-width: 1140px;
+  }
+}
+
+/* ===============================
+   BOTÕES PADRÃO
+================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $space-xs;
+
+  padding: $space-sm $space-lg;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+  text-decoration: none;
+
+  &--primary {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &:hover {
+      filter: brightness(1.1);
+    }
+  }
+
+  &--secondary {
+    background-color: $color-gray;
+    color: $color-dark;
+
+    &:hover {
+      background-color: darken($color-gray, 5%);
+    }
+  }
+
+  &--danger {
+    background-color: $color-danger;
+    color: $color-white;
+  }
+
+  &--outline {
+    background: transparent;
+    border: 2px solid $color-primary;
+    color: $color-primary;
+
+    &:hover {
+      background: $color-primary;
+      color: $color-white;
+    }
+  }
+}
+
+/* ===============================
+   INPUTS & FORMULÁRIOS
+================================ */
+.input,
+select,
+textarea {
+  width: 100%;
+  padding: $space-sm $space-md;
+  border-radius: 6px;
+  border: 1px solid $color-gray;
+  font-size: 14px;
+  outline: none;
+
+  &:focus {
+    border-color: $color-primary;
+  }
+}
+
+/* ===============================
+   SEÇÕES
+================================ */
+.section {
+  padding: $space-xxl 0;
+
+  &--light {
+    background-color: $color-light;
+  }
+
+  &--dark {
+    background-color: $color-dark;
+    color: $color-white;
+
+    p {
+      color: $color-gray;
+    }
+  }
+}
+
+/* ===============================
+   UTILITÁRIOS
+================================ */
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+.mt-sm {
+  margin-top: $space-sm;
+}
+.mt-md {
+  margin-top: $space-md;
+}
+.mt-lg {
+  margin-top: $space-lg;
+}
+
+.mb-sm {
+  margin-bottom: $space-sm;
+}
+.mb-md {
+  margin-bottom: $space-md;
+}
+.mb-lg {
+  margin-bottom: $space-lg;
+}
+
+.hidden {
+  display: none;
+}
+
+.hui-container {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+  max-width: 1320px;
+
+  @include respond(tablet) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+/* =================================================
+   ANIMAÇÕES POR SCROLL — GLOBAL
+================================================= */
+
+.animate-fade-up,
+.animate-fade-right,
+.animate-fade-left,
+.animate-zoom-in {
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+/* Estado inicial */
+.animate-fade-up {
+  transform: translateY(24px);
+}
+
+.animate-fade-right {
+  transform: translateX(32px);
+}
+
+.animate-fade-left {
+  transform: translateX(-32px);
+}
+
+.animate-zoom-in {
+  transform: scale(0.92);
+}
+
+/* Quando entra na tela */
+.is-visible.animate-fade-up {
+  animation: fadeInUp 0.7s ease-out forwards;
+}
+
+.is-visible.animate-fade-right {
+  animation: fadeInRight 0.7s ease-out forwards;
+}
+
+.is-visible.animate-fade-left {
+  animation: fadeInLeft 0.7s ease-out forwards;
+}
+
+.is-visible.animate-zoom-in {
+  animation: zoomIn 0.6s ease-out forwards;
+}
+
+/* Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

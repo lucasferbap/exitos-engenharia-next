@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///Users/lucas.baptista/Documents/projetos/site-marquin-nextjs/src/app/clientes/page.tsx"],"sourcesContent":["export default function Clients() {\n    return (\n        <div className=\"client\">\n            <h1>Clientes 👨‍💻</h1>\n        </div>\n    )\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACpB,qBACI,8OAAC;QAAI,WAAU;kBACX,cAAA,8OAAC;sBAAG;;;;;;;;;;;AAGhB","debugId":null}}]
+}

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///Users/lucas.baptista/Documents/projetos/site-marquin-nextjs/src/app/page.tsx"],"sourcesContent":["import HeroHome from \"@/components/Home\";\n// import About from \"@/components/about\";\n// import Clients from \"@/components/Clients\";\n// import Contact from \"@/components/Contact\";\n// import Projects from \"@/components/Projects\";\n// import Services from \"@/components/Services\";\n\nexport default function Home() {\n  return (\n    <>\n      <HeroHome />\n\n      {/* <About />\n\n      <Services />\n\n      <Clients />\n\n      <Projects />\n\n      <Contact /> */}\n    </>\n  )\n}\n"],"names":[],"mappings":";;;;;;;;;;;;AAOe,SAAS;IACtB,qBACE;kBACE,cAAA,8OAAC;;;;;;AAaP","debugId":null}}]
+}

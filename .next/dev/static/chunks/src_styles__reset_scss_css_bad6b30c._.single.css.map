@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///turbopack:///[project]/src/styles/_reset.scss"],"sourcesContent":["*,\n*::before,\n*::after {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\n\nul,\nol {\n  list-style: none;\n}\n\na {\n  text-decoration: none;\n  color: inherit;\n}\n\nhtml,\nbody {\n  font-family: Arial, Helvetica, sans-serif;\n  line-height: 1.5;\n  -webkit-font-smoothing: antialiased;\n  background-color: #fff;\n  color: #111;\n  position: relative;\n  scroll-behavior: smooth;\n  overflow-x: hidden;\n}\n\nbutton,\ninput,\ntextarea,\nselect {\n  font: inherit;\n  border: none;\n  outline: none;\n  background: none;\n}\n\nbutton {\n  cursor: pointer;\n}\n\nimg,\npicture,\nvideo,\ncanvas,\nsvg {\n  display: block;\n  max-width: 100%;\n  height: auto;\n}\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\nblockquote,\nq {\n  quotes: none;\n}\n\n:where([hidden]) {\n  display: none !important;\n}\n\n* {\n  transition:\n    background-color 0.2s ease,\n    color 0.2s ease;\n}\n"],"names":[],"mappings":"AAAA;;;;;;AAQA;;;;AAKA;;;;;AAKA;;;;;;;;;;;AAYA;;;;;;;AAUA;;;;AAIA;;;;;;AAUA;;;;;AAKA;;;;AAKA;;;;AAIA"}}]
+}

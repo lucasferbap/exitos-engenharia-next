@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/lucas.baptista/Documents/projetos/site-marquin-nextjs/src/components/PageWrapper.tsx"],"sourcesContent":["'use client'\nimport { useEffect, useState } from \"react\"\n\nexport default function PageWrapper({ children }: { children: React.ReactNode }) {\n    const [animationClass, setAnimationClass] = useState(\"enter\")\n\n    useEffect(() => {\n        // entra com animação suave\n        const timer = setTimeout(() => setAnimationClass(\"enter-active\"), 10)\n        return () => clearTimeout(timer)\n    }, [])\n\n    return <div className={`page-wrapper ${animationClass}`}>{children}</div>\n}\n"],"names":[],"mappings":";;;;;AACA;AADA;;;AAGe,SAAS,YAAY,EAAE,QAAQ,EAAiC;IAC3E,MAAM,CAAC,gBAAgB,kBAAkB,GAAG,IAAA,iNAAQ,EAAC;IAErD,IAAA,kNAAS,EAAC;QACN,2BAA2B;QAC3B,MAAM,QAAQ,WAAW,IAAM,kBAAkB,iBAAiB;QAClE,OAAO,IAAM,aAAa;IAC9B,GAAG,EAAE;IAEL,qBAAO,8OAAC;QAAI,WAAW,CAAC,aAAa,EAAE,gBAAgB;kBAAG;;;;;;AAC9D","debugId":null}}]
+}
