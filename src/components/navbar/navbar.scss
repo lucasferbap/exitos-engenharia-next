@@ -151,7 +151,7 @@
     position: fixed;
     top: 0;
     right: -60%; // FECHADO
-    height: 100vh;
+    height: calc(100vh - 70px);
     width: 60%;
 
     background: $color-white;

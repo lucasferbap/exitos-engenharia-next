@@ -25,10 +25,10 @@ export default function Navbar() {
     const btn = document.getElementById("menuBtn");
     const menu = document.querySelector(".navbar__mobile");
     const overlay = document.querySelector(".navbar__overlay");
-    const body = document.querySelector("body");
+    const html = document.querySelector("html");
 
-    if (btn && menu && overlay && body) {
-      body.classList.toggle("overflow-hidden");
+    if (btn && menu && overlay && html) {
+      html.classList.toggle("overflow-hidden");
       btn.classList.toggle("navbar__toggle--open");
       menu.classList.toggle("navbar__mobile--open");
       overlay.classList.toggle("navbar__overlay--active");
