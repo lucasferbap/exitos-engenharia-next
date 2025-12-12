@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/lucas.baptista/Documents/projetos/site-marquin-nextjs/src/app/page.tsx"],"sourcesContent":["'use client'\n\nimport { usePageTransition } from \"@/context/PageTransitionContext\"\nimport { motion } from \"motion/react\"\n\nexport default function Home() {\n  const controls = usePageTransition()\n\n  return (\n    <motion.div\n      animate={controls}\n      initial={{ transform: \"translateX(100%)\" }}\n      className=\"home\"\n    >\n      <h1>Home page 🏡</h1>\n    </motion.div>\n  )\n}"],"names":[],"mappings":";;;;;AAEA;AACA;AAHA;;;;AAKe,SAAS;IACtB,MAAM,WAAW,IAAA,6JAAiB;IAElC,qBACE,8OAAC,oMAAM,CAAC,GAAG;QACT,SAAS;QACT,SAAS;YAAE,WAAW;QAAmB;QACzC,WAAU;kBAEV,cAAA,8OAAC;sBAAG;;;;;;;;;;;AAGV","debugId":null}}]
-}

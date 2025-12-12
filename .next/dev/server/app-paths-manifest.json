@@ -1,5 +1,0 @@
-{
-  "/api/preview-auth/route": "app/api/preview-auth/route.js",
-  "/page": "app/page.js",
-  "/preview-login/page": "app/preview-login/page.js"
-}
