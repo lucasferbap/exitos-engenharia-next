@@ -1,220 +1,479 @@
 @use "../../styles/global" as *;
 
-/* =================================================
-   NAVBAR — BEM ESTRITO + PADRONIZAÇÃO (FINAL CORRETA)
-================================================= */
-
-.navbar {
+.header {
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
+
   z-index: 100;
 
   width: 100%;
-  height: 70px;
-  padding: 0 $space-lg;
+
+  background: transparent;
+
+  transition:
+    background 0.4s ease,
+    backdrop-filter 0.4s ease,
+    border-color 0.4s ease;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background: rgba(255, 255, 255, 0.04);
+  }
+}
+
+/* ========================================
+   SCROLLED
+======================================== */
+
+.headerScrolled {
+  background: rgba(15, 15, 15, 0.78);
+
+  backdrop-filter: blur(16px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ========================================
+   INNER
+======================================== */
+
+.headerInner {
+  height: 80px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
 
-  background-color: $color-white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+/* ========================================
+   RIGHT
+======================================== */
 
-  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 
-  &--hidden {
-    transform: translateY(-100%);
+/* ========================================
+   LOGO
+======================================== */
+
+.logoWrapper {
+  position: relative;
+  z-index: 20;
+
+  display: flex;
+  align-items: center;
+
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.88;
   }
 
-  /* ========== LOGO ========== */
-  &__logo {
+  .logoDesktop {
+    height: 42px;
+    width: auto;
+
+    object-fit: contain;
+
+    display: block;
+
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+
+  .logoMobile {
+    display: none;
+
+    @media (max-width: 992px) {
+      display: block;
+
+      width: auto;
+      height: 38px;
+    }
+  }
+}
+
+/* ========================================
+   DESKTOP NAV
+======================================== */
+
+.desktopNav {
+  @media (max-width: 992px) {
+    display: none;
+  }
+
+  ul {
     display: flex;
     align-items: center;
+    gap: 48px;
   }
 
-  /* ========== MENU DESKTOP ========== */
-  &__menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  a {
+    position: relative;
 
-    &--desktop {
-      display: none;
-      gap: $space-xxl;
+    display: inline-flex;
+    align-items: center;
 
-      @include respond(tablet) {
-        display: flex;
-      }
+    color: $color-white;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+
+    transition:
+      opacity 0.3s ease,
+      color 0.3s ease;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+
+      width: 0%;
+      height: 1px;
+
+      background: $color-accent;
+
+      transition: width 0.35s ease;
     }
 
-    &-item {
-      display: flex;
-      align-items: center;
-    }
-
-    &-link {
-      position: relative;
-      font-weight: 500;
-      color: $color-dark;
-      text-decoration: none;
-      padding-bottom: 4px;
-      transition: color 0.3s ease;
+    &:hover {
+      opacity: 1;
 
       &::after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        bottom: -4px;
-        width: 0%;
-        height: 2px;
-        background-color: $color-primary;
-        border-radius: 2px;
-        transform: translateX(-50%);
-        opacity: 0;
-        transition: all 0.3s ease;
-      }
-
-      &:hover {
-        color: $color-primary;
-
-        &::after {
-          width: 100%;
-          opacity: 0.7;
-        }
-      }
-
-      &--active {
-        color: $color-primary;
-        font-weight: 600;
-
-        &::after {
-          width: 100%;
-          opacity: 1;
-        }
+        width: 100%;
       }
     }
   }
+}
 
-  /* ========== BOTÃO MOBILE (HAMBURGUER LIMPO) ========== */
-  &__toggle {
+/* ========================================
+   CTA
+======================================== */
+
+.headerCta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 46px;
+
+  padding: 0 24px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  color: $color-white;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+
+  transition:
+    border-color 0.3s ease,
+    background 0.3s ease,
+    transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+
+    border-color: rgba(234, 91, 19, 0.42);
+
+    background: rgba(234, 91, 19, 0.06);
+  }
+
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+
+/* ========================================
+   MENU BUTTON
+======================================== */
+
+.menuButton {
+  position: relative;
+  z-index: 30;
+
+  display: none;
+
+  width: 32px;
+  height: 24px;
+
+  @media (max-width: 992px) {
     display: flex;
+
     flex-direction: column;
     justify-content: center;
-    gap: 6px;
 
-    width: 40px;
-    height: 30px;
-
-    background: none;
-    border: none;
-    cursor: pointer;
-    z-index: 300;
-
-    @include respond(tablet) {
-      display: none;
-    }
-
-    span {
-      width: 100%;
-      height: 4px;
-      background-color: $color-dark;
-      border-radius: 20px;
-
-      transition: transform 0.4s ease, opacity 0.3s ease;
-      transform-origin: center;
-    }
-
-    span:nth-child(2) {
-      width: 60%;
-    }
-
-    &--open span:nth-child(1) {
-      transform: translateY(10px) rotate(45deg);
-    }
-
-    &--open span:nth-child(2) {
-      opacity: 0;
-    }
-
-    &--open span:nth-child(3) {
-      transform: translateY(-10px) rotate(-45deg);
-    }
+    gap: 8px;
   }
 
-  /* ========== MENU MOBILE (GAVETA LATERAL CORRETA) ========== */
-  &__mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  span {
+    display: block;
 
-    position: fixed;
-    top: 0;
-    right: -60%; // FECHADO
-    height: calc(100vh - 70px);
-    width: 60%;
+    height: 1px;
 
     background: $color-white;
-    transition: right 0.45s ease-in-out;
-    z-index: 200;
 
-    @include respond(tablet) {
-      display: none;
+    transition:
+      width 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  span:nth-child(1) {
+    width: 100%;
+  }
+
+  span:nth-child(2) {
+    width: 60%;
+    margin-left: auto;
+  }
+
+  &:hover {
+    span:nth-child(2) {
+      width: 100%;
     }
+  }
+}
 
-    &--open {
-      right: 0; // ABERTO
-    }
+/* ========================================
+   OVERLAY
+======================================== */
 
-    &-list {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+.overlay {
+  position: fixed;
+  inset: 0;
 
-      gap: $space-xl;
-      margin-top: 70px;
-      flex: 1;
+  z-index: 110;
 
-      border-top: 1px solid $color-gray;
-      background: linear-gradient(to bottom, $color-white, $color-light);
-    }
+  background: rgba(5, 5, 5, 0.72);
 
-    &-footer {
-      display: flex;
-      justify-content: center;
-      gap: $space-xl;
+  backdrop-filter: blur(14px);
+}
 
-      padding: $space-md;
-      border-top: 1px solid $color-gray;
+/* ========================================
+   MOBILE MENU
+======================================== */
 
-      a:first-child {
-        color: #e4405f;
-      }
+.mobileMenu {
+  position: fixed;
+  inset: 0;
 
-      a:nth-child(2) {
-        color: #0077b5;
-      }
+  z-index: 120;
+
+  background: #111111;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 28px 20px 40px;
+
+  @include respond(tablet) {
+    padding: 32px 32px 48px;
+  }
+}
+
+/* ========================================
+   MOBILE TOP
+======================================== */
+
+.mobileMenuTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: $color-white;
+
+    font-size: 30px;
+
+    transition:
+      transform 0.3s ease,
+      color 0.3s ease;
+
+    &:hover {
+      color: $color-accent;
+
+      transform: rotate(90deg);
     }
   }
 
-  /* ========== OVERLAY ========== */
-  &__overlay {
-    position: fixed;
-    inset: 0;
+  img {
+    height: 48px;
+    width: auto;
+  }
+}
 
-    background: rgba(0, 0, 0, 0.45);
-    backdrop-filter: blur(4px);
+/* ========================================
+   MOBILE NAV
+======================================== */
 
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
+.mobileNav {
+  flex: 1;
 
-    z-index: 99;
+  display: flex;
+  align-items: center;
 
-    &--active {
-      opacity: 1;
-      pointer-events: all;
+  ul {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  a {
+    position: relative;
+
+    display: inline-block;
+
+    color: $color-white;
+
+    font-family: $font-title;
+
+    font-size: clamp(42px, 9vw, 82px);
+    font-weight: 600;
+
+    line-height: 0.9;
+    letter-spacing: -0.05em;
+
+    transition:
+      color 0.3s ease,
+      transform 0.3s ease;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+
+      width: 0%;
+      height: 2px;
+
+      background: $color-accent;
+
+      transition: width 0.4s ease;
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* ========================================
+   MOBILE FOOTER
+======================================== */
+
+.mobileFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* ========================================
+   MOBILE CTA
+======================================== */
+
+.mobileCta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  min-height: 56px;
+
+  background: $color-accent;
+
+  color: $color-white;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* ========================================
+   SOCIALS
+======================================== */
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  padding-top: 24px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: rgba(255, 255, 255, 0.7);
+
+    font-size: 22px;
+
+    transition:
+      transform 0.3s ease,
+      color 0.3s ease;
+
+    &:hover {
+      color: $color-accent;
+
+      transform: translateY(-2px);
+    }
+  }
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 768px) {
+  .headerInner {
+    height: 72px;
+  }
+
+  .logoWrapper {
+    .logoMobile {
+      height: 36px;
+    }
+  }
+
+  .mobileNav {
+    a {
+      font-size: 52px;
     }
   }
 }

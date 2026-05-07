@@ -1,152 +1,244 @@
-"use client";
+'use client';
 
-import { useEffect, useState } from "react";
-import Image from "next/image";
-import logo from "@/assets/logo.png";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
-import useActiveSection from "@/hooks/useActiveSection";
-import "./navbar.scss";
+import Link from 'next/link';
+import Image from 'next/image';
+
+import { useEffect, useState } from 'react';
+
+import { AnimatePresence, motion } from 'framer-motion';
+
+import { IoClose } from 'react-icons/io5';
+import { FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+
+import logoDesktop from '@/assets/logo_desktop.png';
+import logoMobile from '@/assets/logo_mobile.png';
+
+import './navbar.scss';
+
+const menuItems = [
+  { label: 'Início', href: '#' },
+  { label: 'Sobre', href: '#sobre' },
+  { label: 'Serviços', href: '#servicos' },
+  { label: 'Projetos', href: '#projetos' },
+];
+
+const easing = [0.77, 0, 0.175, 1] as const;
 
 export default function Navbar() {
-  const [scrollDirection, setScrollDirection] = useState<"up" | "down" | null>(null);
+  const [isOpen, setIsOpen] = useState(false);
 
-  useActiveSection();
-
-  const menuItens = [
-    { name: "Home", path: "#home", id: 1 },
-    { name: "A Exitos", path: "#about", id: 2 },
-    { name: "Serviços", path: "#servicos", id: 3 },
-    { name: "Clientes", path: "#clientes", id: 4 },
-    { name: "Projetos", path: "#projects", id: 5 },
-    { name: "Contato", path: "#contato", id: 6 },
-  ];
-
-  const toggleMenu = () => {
-    const btn = document.getElementById("menuBtn");
-    const menu = document.querySelector(".navbar__mobile");
-    const overlay = document.querySelector(".navbar__overlay");
-    const html = document.querySelector("html");
-
-    if (btn && menu && overlay && html) {
-      html.classList.toggle("overflow-hidden");
-      btn.classList.toggle("navbar__toggle--open");
-      menu.classList.toggle("navbar__mobile--open");
-      overlay.classList.toggle("navbar__overlay--active");
-    }
-  };
-
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
-    e.preventDefault();
-    const section = document.querySelector(id);
-    section?.scrollIntoView({ behavior: "smooth" });
-  };
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    let lastScrollY = window.scrollY;
+    document.body.style.overflow = isOpen ? 'hidden' : 'auto';
 
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isOpen]);
+
+  useEffect(() => {
     const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      if (currentScrollY > lastScrollY && currentScrollY > 50) {
-        setTimeout(() => setScrollDirection("down"), 500);
-      } else if (currentScrollY < lastScrollY) {
-        setScrollDirection("up");
-      }
-
-      lastScrollY = currentScrollY;
+      setIsScrolled(window.scrollY > 40);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   return (
     <>
-      <nav className={`navbar ${scrollDirection === "down" ? "navbar--hidden" : ""}`}>
-        {/* LOGO */}
-        <div className="navbar__logo">
-          <a href="#home" className="navbar__logo-link">
+      <header className={`header ${isScrolled ? 'headerScrolled' : ''}`}>
+
+        <div className='container headerInner'>
+
+          {/* LOGO */}
+          <Link href='/' className='logoWrapper'>
+
             <Image
-              src={logo}
-              width={120}
-              height={40}
-              alt="Logo"
+              src={logoDesktop}
+              alt='Logo Exitus Engenharia'
+              className='logoDesktop'
               priority
-              className="navbar__logo-image"
             />
-          </a>
-        </div>
 
-        {/* MENU DESKTOP */}
-        <ul className="navbar__menu navbar__menu--desktop">
-          {menuItens.map((item) => (
-            <li key={item.id} className="navbar__menu-item">
-              <a
-                href={item.path}
-                className="navbar__menu-link"
-                onClick={(event) => handleNavClick(event, item.path)}
-              >
-                {item.name}
-              </a>
-            </li>
-          ))}
-        </ul>
+            <Image
+              src={logoMobile}
+              alt='Logo Exitus Engenharia'
+              className='logoMobile'
+              width={220}
+              height={60}
+              priority
+            />
 
-        {/* BOTÃO MOBILE */}
-        <button
-          className="navbar__toggle"
-          id="menuBtn"
-          aria-label="Abrir menu"
-          onClick={toggleMenu}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+          </Link>
 
-        {/* MENU MOBILE */}
-        <div className="navbar__mobile">
-          <ul className="navbar__mobile-list">
-            {menuItens.map((item) => (
-              <li key={item.id} className="navbar__menu-item">
-                <a
-                  href={item.path}
-                  className="navbar__menu-link"
-                  onClick={(event) => {
-                    handleNavClick(event, item.path);
-                    toggleMenu();
-                  }}
-                >
-                  {item.name}
-                </a>
-              </li>
-            ))}
-          </ul>
+          {/* RIGHT */}
+          <div className='headerRight'>
 
-          <div className="navbar__mobile-footer">
-            <a
-              href="https://instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
+            {/* DESKTOP NAV */}
+            <nav className='desktopNav'>
+              <ul>
+
+                {menuItems.map((item) => (
+                  <li key={item.label}>
+
+                    <Link href={item.href}>
+                      {item.label}
+                    </Link>
+
+                  </li>
+                ))}
+
+              </ul>
+            </nav>
+
+            {/* CTA */}
+            <Link
+              href='#contato'
+              className='headerCta'
             >
-              <FaInstagram size={22} />
-            </a>
-            <a
-              href="https://linkedin.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
+              Solicitar orçamento
+            </Link>
+
+            {/* MOBILE BUTTON */}
+            <button
+              className='menuButton'
+              onClick={() => setIsOpen(true)}
+              aria-label='Abrir menu'
             >
-              <FaLinkedin size={22} />
-            </a>
+              <span />
+              <span />
+            </button>
+
           </div>
-        </div>
-      </nav>
 
-      {/* OVERLAY */}
-      <div className="navbar__overlay" onClick={toggleMenu}></div>
+        </div>
+
+      </header>
+
+      <AnimatePresence>
+        {isOpen && (
+          <>
+            {/* OVERLAY */}
+            <motion.div
+              className='overlay'
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.4 }}
+              onClick={() => setIsOpen(false)}
+            />
+
+            {/* MOBILE MENU */}
+            <motion.aside
+              className='mobileMenu'
+              initial={{ x: '100%' }}
+              animate={{ x: 0 }}
+              exit={{ x: '100%' }}
+              transition={{
+                duration: 0.7,
+                ease: easing,
+              }}
+            >
+
+              {/* TOP */}
+              <div className='mobileMenuTop'>
+
+                <Image
+                  src={logoMobile}
+                  alt='Logo Exitus Engenharia'
+                  width={160}
+                  height={50}
+                />
+
+                <button
+                  onClick={() => setIsOpen(false)}
+                  aria-label='Fechar menu'
+                >
+                  <IoClose />
+                </button>
+
+              </div>
+
+              {/* NAV */}
+              <nav className='mobileNav'>
+                <ul>
+
+                  {menuItems.map((item, index) => (
+                    <motion.li
+                      key={item.label}
+                      initial={{
+                        opacity: 0,
+                        y: 40,
+                      }}
+                      animate={{
+                        opacity: 1,
+                        y: 0,
+                      }}
+                      exit={{
+                        opacity: 0,
+                        y: 20,
+                      }}
+                      transition={{
+                        delay: 0.08 * index,
+                        duration: 0.6,
+                        ease: easing,
+                      }}
+                    >
+
+                      <Link
+                        href={item.href}
+                        onClick={() => setIsOpen(false)}
+                      >
+                        {item.label}
+                      </Link>
+
+                    </motion.li>
+                  ))}
+
+                </ul>
+              </nav>
+
+              {/* FOOTER */}
+              <motion.div
+                className='mobileFooter'
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{
+                  delay: 0.5,
+                }}
+              >
+
+                <Link
+                  href='#contato'
+                  className='mobileCta'
+                  onClick={() => setIsOpen(false)}
+                >
+                  Solicitar orçamento
+                </Link>
+
+                <div className='socials'>
+
+                  <Link href='#'>
+                    <FaInstagram />
+                  </Link>
+
+                  <Link href='#'>
+                    <FaLinkedinIn />
+                  </Link>
+
+                </div>
+
+              </motion.div>
+
+            </motion.aside>
+          </>
+        )}
+      </AnimatePresence>
     </>
   );
 }

@@ -56,8 +56,6 @@ async function POST(request) {
     const { password } = body;
     // Senha secreta que só você e seu cliente devem saber
     const PREVIEW_PASSWORD = process.env.PREVIEW_PASSWORD || "minha-senha-secreta";
-    console.log(PREVIEW_PASSWORD);
-    console.log(password);
     if (password !== PREVIEW_PASSWORD) {
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
             success: false,

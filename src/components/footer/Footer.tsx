@@ -1,94 +1,174 @@
-"use client";
+'use client';
 
-import { FaEnvelope, FaPhoneAlt, FaLinkedin, FaInstagram } from "react-icons/fa";
-import useScrollAnimation from "@/hooks/useScrollAnimation";
-import Image from "next/image";
-import logo from "@/assets/logo.png";
+import Link from 'next/link';
+import Image from 'next/image';
 
-import "./footer.scss";
+import {
+    FaInstagram,
+    FaLinkedinIn,
+} from 'react-icons/fa';
+
+import logoDesktop from '@/assets/logo_desktop.png';
+
+import './footer.scss';
+
+const navigation = [
+    {
+        label: 'Início',
+        href: '#',
+    },
+
+    {
+        label: 'Sobre',
+        href: '#sobre',
+    },
+
+    {
+        label: 'Serviços',
+        href: '#servicos',
+    },
+
+    {
+        label: 'Contato',
+        href: '#contato',
+    },
+];
 
 export default function Footer() {
-    useScrollAnimation();
-
     return (
-        <footer className="footer" data-animate>
-            <div className="footer__content hui-container">
+        <footer className='footer'>
 
-                {/* COLUNA 1 — LOGO + TEXTO */}
-                <div className="footer__col footer__brand" data-animate>
-                    <Image
-                        src={logo}
-                        alt="Exitos Engenharia"
-                        width={150}
-                        height={60}
-                        className="footer__logo"
-                    />
+            <div className='container'>
 
-                    <p className="footer__text">
-                        Soluções inteligentes em engenharia, tecnologia e inovação para transformar
-                        ideias em resultados.
-                    </p>
-                </div>
+                {/* TOP */}
+                <div className='footerTop'>
 
-                {/* COLUNA 2 — LINKS EM 2 COLUNAS */}
-                <div className="footer__col" data-animate>
-                    <h4 className="footer__title">Navegação</h4>
+                    {/* BRAND */}
+                    <div className='footerBrand'>
 
-                    <div className="footer__links-grid">
-                        <ul className="footer__links">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#sobre">A Exitos</a></li>
-                            <li><a href="#servicos">Serviços</a></li>
-                        </ul>
+                        <Link
+                            href='/'
+                            className='footerLogo'
+                        >
 
-                        <ul className="footer__links">
-                            <li><a href="#clientes">Clientes</a></li>
-                            <li><a href="#projects">Projetos</a></li>
-                            <li><a href="#contato">Contato</a></li>
-                        </ul>
-                    </div>
-                </div>
+                            <Image
+                                src={logoDesktop}
+                                alt='Exitus Engenharia'
+                                priority
+                            />
 
-                {/* COLUNA 3 — CONTATO */}
-                <div className="footer__col" data-animate>
-                    <h4 className="footer__title">Contato</h4>
+                        </Link>
 
-                    <div className="footer__info">
-                        <p><FaEnvelope /> contato@exitos.com</p>
-                        <p><FaPhoneAlt /> (21) 99999-9999</p>
+                        <p className='footerDescription'>
+                            Soluções em engenharia civil com foco
+                            em planejamento técnico, precisão
+                            estrutural e execução de alto padrão.
+                        </p>
+
                     </div>
 
-                    <div className="footer__social">
-                        <a href="https://instagram.com" target="_blank" rel="noreferrer">
-                            <FaInstagram />
+                    {/* NAV */}
+                    <div className='footerColumn'>
+
+                        <span className='footerLabel'>
+                            Navegação
+                        </span>
+
+                        <nav className='footerNav'>
+
+                            {navigation.map((item) => (
+                                <Link
+                                    key={item.label}
+                                    href={item.href}
+                                >
+                                    {item.label}
+                                </Link>
+                            ))}
+
+                        </nav>
+
+                    </div>
+
+                    {/* CONTACT */}
+                    <div className='footerColumn'>
+
+                        <span className='footerLabel'>
+                            Contato
+                        </span>
+
+                        <div className='footerInfos'>
+
+                            <a href='mailto:contato@exitusengenharia.com'>
+                                contato.exitusengenharia@gmail.com
+                            </a>
+
+                            <a href='https://wa.me/552197338-9918'>
+                                (21) 9 7338-9918
+                            </a>
+
+                            <span>
+                                Brasil
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    {/* SOCIAL */}
+                    <div className='footerColumn'>
+
+                        <span className='footerLabel'>
+                            Social
+                        </span>
+
+                        <div className='footerSocials'>
+
+                            <Link href='#'>
+                                <FaInstagram />
+                            </Link>
+
+                            <Link href='#'>
+                                <FaLinkedinIn />
+                            </Link>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                {/* BOTTOM */}
+                <div className='footerBottom'>
+
+                    <div className='footerCopyright'>
+                        <span>
+                            © 2026 Exitus Engenharia.
+                        </span>
+
+                        <span>
+                            Todos os direitos reservados.
+                        </span>
+                    </div>
+
+                    <div className='footerCredits'>
+
+                        <span>
+                            Design & desenvolvimento por
+                        </span>
+
+                        <a
+                            href='https://wa.me/5521995374300'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            Lucas Fernandes
                         </a>
-                        <a href="https://linkedin.com" target="_blank" rel="noreferrer">
-                            <FaLinkedin />
-                        </a>
-                    </div>
-                </div>
 
-                {/* COLUNA 4 — MAPA */}
-                <div className="footer__col footer__map" data-animate>
-                    <h4 className="footer__title">Localização</h4>
-
-                    <div className="footer__map-wrapper">
-                        <iframe
-                            src="https://www.google.com/maps?q=-22.9141308,-43.445982&z=15&output=embed"
-                            loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"
-                        />
                     </div>
+
                 </div>
             </div>
 
-            {/* RODAPÉ */}
-            <div className="footer__bottom">
-                <p>
-                    © {new Date().getFullYear()} Exitos Engenharia. Todos os direitos reservados.
-                    <span className="footer__dev"> • Desenvolvido por Lucas Fernandes</span>
-                </p>
-            </div>
         </footer>
     );
 }

@@ -1,12 +1,14 @@
 /* =========================================================
-   DESIGN SYSTEM — SITE INSTITUCIONAL
+   EXITUS — GLOBAL DESIGN SYSTEM
 ========================================================= */
 
 /* ===============================
-   BREAKPOINTS (Mobile First)
+   BREAKPOINTS
 ================================ */
+
 $tablet: 768px;
 $desktop: 1024px;
+$wide: 1440px;
 
 @mixin respond($device) {
   @if $device == tablet {
@@ -17,59 +19,65 @@ $desktop: 1024px;
     @media (min-width: $desktop) {
       @content;
     }
-  } @else {
-    @content; // mobile padrão
+  } @else if $device == wide {
+    @media (min-width: $wide) {
+      @content;
+    }
   }
 }
 
 /* ===============================
-   CORES
+   COLORS
 ================================ */
-$color-primary: #1d4ed8;
-$color-secondary: #64748b;
-$color-dark: #0f172a;
-$color-light: #f8fafc;
-$color-gray: #e5e7eb;
+
+$color-accent: #ea5b13;
+
+$color-black: #111111;
+$color-graphite: #2e2d2c;
+
 $color-white: #ffffff;
-$color-danger: #dc2626;
+
+$color-gray-100: #f5f5f5;
+$color-gray-200: #dadada;
+$color-gray-300: #b8b8b8;
+$color-gray-400: #7a7a7a;
 
 /* ===============================
-   FONTES
+   TYPOGRAPHY
 ================================ */
-$font-primary: "Inter", sans-serif;
+
+$font-title: var(--font-title);
+$font-body: var(--font-body);
 
 $font-size-base: 16px;
-$line-height-base: 1.6;
+
+$line-height-title: 1;
+$line-height-body: 1.7;
 
 /* ===============================
-   TIPOGRAFIA — TÍTULOS
+   SPACING
 ================================ */
-$h1-size-mobile: 32px;
-$h1-size-desktop: 48px;
 
-$h2-size-mobile: 24px;
-$h2-size-desktop: 36px;
-
-$h3-size-mobile: 20px;
-$h3-size-desktop: 28px;
-
-/* ===============================
-   ESPAÇAMENTOS PADRÃO
-================================ */
 $space-xxs: 4px;
 $space-xs: 8px;
 $space-sm: 12px;
 $space-md: 16px;
 $space-lg: 24px;
 $space-xl: 32px;
-$space-xxl: 48px;
-
-/* Espaçamento padrão do H2 para o conteúdo abaixo */
-$h2-spacing-bottom: $space-lg;
+$space-2xl: 48px;
+$space-3xl: 72px;
+$space-4xl: 120px;
 
 /* ===============================
-   RESET BÁSICO
+   CONTAINER
 ================================ */
+
+$container-width: 1440px;
+
+/* ===============================
+   RESET
+================================ */
+
 *,
 *::before,
 *::after {
@@ -78,26 +86,46 @@ $h2-spacing-bottom: $space-lg;
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-body;
+
+  font-size: $font-size-base;
+  line-height: $line-height-body;
+
+  background: $color-black;
+  color: $color-white;
+
+  overflow-x: hidden;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ===============================
+   SELECTION
+================================ */
+
+::selection {
+  background: $color-accent;
+  color: $color-white;
+}
+
+/* ===============================
+   ELEMENTS
+================================ */
+
 ul,
 ol {
   list-style: none;
 }
 
 a {
-  text-decoration: none;
   color: inherit;
-}
-
-html,
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  background-color: #fff;
-  color: #111;
-  position: relative;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+  text-decoration: none;
 }
 
 button,
@@ -105,9 +133,11 @@ input,
 textarea,
 select {
   font: inherit;
+
   border: none;
   outline: none;
-  background: none;
+
+  background: transparent;
 }
 
 button {
@@ -121,320 +151,155 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
-  height: auto;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-:where([hidden]) {
-  display: none !important;
-}
-
-* {
-  transition:
-    background-color 0.2s ease,
-    color 0.2s ease;
-}
-
-.overflow-hidden {
-  overflow: hidden;
 }
 
 /* ===============================
-   TITULOS PADRÃO
+   TYPOGRAPHY
 ================================ */
+
 h1,
 h2,
-h3 {
-  margin: 0;
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-title;
+
   font-weight: 600;
-  line-height: 1.2;
+
+  line-height: $line-height-title;
+
+  letter-spacing: -0.04em;
+
+  color: $color-white;
 }
 
 h1 {
-  font-size: $h1-size-mobile;
-  margin-bottom: $space-lg;
+  font-size: clamp(52px, 8vw, 112px);
 
-  @include respond(desktop) {
-    font-size: $h1-size-desktop;
-  }
+  line-height: 0.9;
 }
 
 h2 {
-  font-size: $h2-size-mobile;
-  margin-bottom: $h2-spacing-bottom;
+  font-size: clamp(36px, 5vw, 72px);
 
-  @include respond(desktop) {
-    font-size: $h2-size-desktop;
-  }
+  line-height: 0.95;
 }
 
 h3 {
-  font-size: $h3-size-mobile;
-  margin-bottom: $space-md;
-
-  @include respond(desktop) {
-    font-size: $h3-size-desktop;
-  }
+  font-size: clamp(28px, 4vw, 42px);
 }
 
 p {
-  margin: 0 0 $space-md 0;
-  color: $color-secondary;
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.72);
 }
 
 /* ===============================
-   CONTAINER PADRÃO
+   CONTAINER
 ================================ */
+
 .container {
   width: 100%;
-  padding: 0 $space-md;
+
+  max-width: $container-width;
+
   margin: 0 auto;
 
-  @include respond(tablet) {
-    max-width: 720px;
-  }
+  padding-left: 48px;
+  padding-right: 48px;
 
-  @include respond(desktop) {
-    max-width: 1140px;
+  @media (max-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
 /* ===============================
-   BOTÕES PADRÃO
+   SECTION
 ================================ */
-.btn {
+
+.section {
+  position: relative;
+
+  padding: 140px 0;
+
+  @media (max-width: 768px) {
+    padding: 96px 0;
+  }
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+
+.buttonPrimary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: $space-xs;
 
-  padding: $space-sm $space-lg;
-  font-size: 14px;
+  height: 56px;
+
+  padding: 0 32px;
+
+  background: $color-accent;
+  color: $color-white;
+
+  font-size: 12px;
   font-weight: 600;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-  transition: 0.2s ease;
-  text-decoration: none;
 
-  &--primary {
-    background-color: $color-primary;
-    color: $color-white;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
 
-    &:hover {
-      filter: brightness(1.1);
-    }
-  }
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 
-  &--secondary {
-    background-color: $color-gray;
-    color: $color-dark;
-
-    &:hover {
-      background-color: darken($color-gray, 5%);
-    }
-  }
-
-  &--danger {
-    background-color: $color-danger;
-    color: $color-white;
-  }
-
-  &--outline {
-    background: transparent;
-    border: 2px solid $color-primary;
-    color: $color-primary;
-
-    &:hover {
-      background: $color-primary;
-      color: $color-white;
-    }
+  &:hover {
+    transform: translateY(-2px);
+    opacity: 0.92;
   }
 }
 
 /* ===============================
-   INPUTS & FORMULÁRIOS
+   SCROLLBAR
 ================================ */
-.input,
-select,
-textarea {
-  width: 100%;
-  padding: $space-sm $space-md;
-  border-radius: 6px;
-  border: 1px solid $color-gray;
-  font-size: 14px;
-  outline: none;
 
-  &:focus {
-    border-color: $color-primary;
-  }
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-/* ===============================
-   SEÇÕES
-================================ */
-.section {
-  padding: $space-xxl 0;
-
-  &--light {
-    background-color: $color-light;
-  }
-
-  &--dark {
-    background-color: $color-dark;
-    color: $color-white;
-
-    p {
-      color: $color-gray;
-    }
-  }
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
 }
 
-/* ===============================
-   UTILITÁRIOS
-================================ */
-.text-center {
-  text-align: center;
-}
-.text-left {
-  text-align: left;
-}
-.text-right {
-  text-align: right;
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14);
 }
 
-.mt-sm {
-  margin-top: $space-sm;
-}
-.mt-md {
-  margin-top: $space-md;
-}
-.mt-lg {
-  margin-top: $space-lg;
+::-webkit-scrollbar-thumb:hover {
+  background: $color-accent;
 }
 
-.mb-sm {
-  margin-bottom: $space-sm;
-}
-.mb-md {
-  margin-bottom: $space-md;
-}
-.mb-lg {
-  margin-bottom: $space-lg;
+html.lenis {
+  height: auto;
 }
 
-.hidden {
-  display: none;
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
 }
 
-.hui-container {
-  padding-left: 16px;
-  padding-right: 16px;
-  margin: 0 auto;
-  max-width: 1320px;
-
-  @include respond(tablet) {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
 }
 
-/* =================================================
-   ANIMAÇÕES POR SCROLL — GLOBAL
-================================================= */
-
-.animate-fade-up,
-.animate-fade-right,
-.animate-fade-left,
-.animate-zoom-in {
-  opacity: 0;
-  will-change: transform, opacity;
+.lenis.lenis-stopped {
+  overflow: hidden;
 }
 
-/* Estado inicial */
-.animate-fade-up {
-  transform: translateY(24px);
-}
-
-.animate-fade-right {
-  transform: translateX(32px);
-}
-
-.animate-fade-left {
-  transform: translateX(-32px);
-}
-
-.animate-zoom-in {
-  transform: scale(0.92);
-}
-
-/* Quando entra na tela */
-.is-visible.animate-fade-up {
-  animation: fadeInUp 0.7s ease-out forwards;
-}
-
-.is-visible.animate-fade-right {
-  animation: fadeInRight 0.7s ease-out forwards;
-}
-
-.is-visible.animate-fade-left {
-  animation: fadeInLeft 0.7s ease-out forwards;
-}
-
-.is-visible.animate-zoom-in {
-  animation: zoomIn 0.6s ease-out forwards;
-}
-
-/* Keyframes */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(32px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-32px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    transform: scale(0.92);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+body {
+  overscroll-behavior: none;
 }

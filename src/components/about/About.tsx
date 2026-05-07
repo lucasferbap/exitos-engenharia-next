@@ -1,129 +1,204 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import aboutImg from "@/assets/about-hero.png";
-import {
-    FaTools,
-    FaCheckCircle,
-    FaClock,
-    FaUsers,
-    FaBullseye,
-    FaEye,
-    FaHandshake,
-} from "react-icons/fa";
-import useScrollAnimation from "@/hooks/useScrollAnimation";
-import "./about.scss";
+import Image from 'next/image';
 
-export default function AboutSection() {
-    useScrollAnimation();
+import { motion } from 'framer-motion';
 
+import aboutImage from '@/assets/about-hero.png';
+
+import './about.scss';
+
+const easing = [0.22, 1, 0.36, 1] as const;
+
+const fadeUp = {
+    hidden: {
+        opacity: 0,
+        y: 40,
+    },
+
+    visible: {
+        opacity: 1,
+        y: 0,
+
+        transition: {
+            duration: 0.9,
+            ease: easing,
+        },
+    },
+};
+
+const stagger = {
+    hidden: {},
+
+    visible: {
+        transition: {
+            staggerChildren: 0.12,
+        },
+    },
+};
+
+export default function About() {
     return (
-        <section className="about hui-container" id="about">
-            <div className="aboutHero">
-                <div
-                    className="aboutHero__content animate-fade-up"
-                    data-animate
+        <section className='about section' id='sobre'>
+
+            <div className='container'>
+
+                {/* TOP */}
+                <motion.div
+                    className='aboutTop'
+                    variants={stagger}
+                    initial='hidden'
+                    whileInView='visible'
+                    viewport={{
+                        once: true,
+                        amount: 0.3,
+                    }}
                 >
-                    <span className="aboutHero__tag">Sobre nós</span>
-                    <h1>Sobre a Exitos</h1>
-                    <p>
-                        Engenharia, inovação e excelência em cada projeto. Atuamos com foco
-                        em resultado, tecnologia e soluções sob medida.
-                    </p>
+
+                    <motion.div
+                        className='aboutLabel'
+                        variants={fadeUp}
+                    >
+                        Sobre a Exitus
+                    </motion.div>
+
+                    <motion.div
+                        className='aboutHeadlineWrapper'
+                        variants={fadeUp}
+                    >
+                        <h2 className='aboutHeadline'>
+                            Engenharia com
+                            <span>
+                                precisão,
+                                estratégia
+                                e execução.
+                            </span>
+                        </h2>
+                    </motion.div>
+
+                </motion.div>
+
+                {/* CONTENT */}
+                <div className='aboutContent'>
+
+                    {/* LEFT */}
+                    <motion.div
+                        className='aboutText'
+                        variants={stagger}
+                        initial='hidden'
+                        whileInView='visible'
+                        viewport={{
+                            once: true,
+                            amount: 0.3,
+                        }}
+                    >
+
+                        <motion.p variants={fadeUp}>
+                            A Exitus Engenharia atua no desenvolvimento
+                            de projetos e execuções de engenharia civil
+                            com foco em qualidade construtiva, inovação
+                            e excelência operacional.
+                        </motion.p>
+
+                        <motion.p variants={fadeUp}>
+                            Nossa atuação combina planejamento técnico,
+                            inteligência estrutural e acompanhamento
+                            rigoroso para entregar soluções modernas,
+                            eficientes e duradouras.
+                        </motion.p>
+
+                        <motion.div
+                            className='aboutNumbers'
+                            variants={fadeUp}
+                        >
+
+                            <div className='aboutNumberItem'>
+                                <strong>+12</strong>
+                                <span>Anos de experiência</span>
+                            </div>
+
+                            <div className='aboutNumberItem'>
+                                <strong>+80</strong>
+                                <span>Projetos entregues</span>
+                            </div>
+
+                            <div className='aboutNumberItem'>
+                                <strong>100%</strong>
+                                <span>Compromisso técnico</span>
+                            </div>
+
+                        </motion.div>
+
+                    </motion.div>
+
+                    {/* RIGHT */}
+                    <motion.div
+                        className='aboutVisual'
+                        initial={{
+                            opacity: 0,
+                            scale: 1.04,
+                        }}
+                        whileInView={{
+                            opacity: 1,
+                            scale: 1,
+                        }}
+                        viewport={{
+                            once: true,
+                            amount: 0.3,
+                        }}
+                        transition={{
+                            duration: 1.2,
+                            ease: easing,
+                        }}
+                    >
+
+                        <div className='aboutImageWrapper'>
+                            <Image
+                                src={aboutImage}
+                                alt='Projeto Exitus Engenharia'
+                                fill
+                                className='aboutImage'
+                            />
+                        </div>
+
+                        <motion.div
+                            className='aboutFloatingCard'
+                            initial={{
+                                opacity: 0,
+                                y: 32,
+                            }}
+                            whileInView={{
+                                opacity: 1,
+                                y: 0,
+                            }}
+                            viewport={{
+                                once: true,
+                            }}
+                            transition={{
+                                delay: 0.25,
+                                duration: 0.8,
+                                ease: easing,
+                            }}
+                        >
+
+                            <span className='aboutFloatingLabel'>
+                                Exitus Engenharia
+                            </span>
+
+                            <strong>
+                                Construindo soluções
+                                inteligentes para
+                                projetos modernos.
+                            </strong>
+
+                        </motion.div>
+
+                    </motion.div>
+
                 </div>
 
-                <div
-                    className="aboutHero__imgWrapper animate-fade-right"
-                    data-animate
-                >
-                    <div className="aboutHero__overlay" />
-                    <Image
-                        src={aboutImg}
-                        alt="Sobre a Exitos"
-                        className="aboutHero__bg"
-                        priority
-                    />
-                </div>
             </div>
 
-            <div className="diferenciais animate-fade-up" data-animate>
-                <h2>Nossos Diferenciais</h2>
-
-                <div className="diferenciais__grid">
-                    <div className="diferenciais__item">
-                        <FaTools />
-                        <p>Equipe especializada e altamente treinada.</p>
-                    </div>
-
-                    <div className="diferenciais__item">
-                        <FaCheckCircle />
-                        <p>Compromisso com qualidade e conformidade técnica.</p>
-                    </div>
-
-                    <div className="diferenciais__item">
-                        <FaClock />
-                        <p>Entrega eficiente com prazos bem administrados.</p>
-                    </div>
-
-                    <div className="diferenciais__item">
-                        <FaUsers />
-                        <p>Relacionamento transparente e focado no cliente.</p>
-                    </div>
-                </div>
-            </div>
-
-            {/* HISTÓRIA */}
-            <div className="history animate-fade-up" data-animate>
-                <div className="history__container">
-                    <h2>Nossa História</h2>
-
-                    <p>
-                        A Exitos nasceu com o propósito de entregar soluções completas em
-                        engenharia, infraestrutura e serviços especializados. Ao longo dos
-                        anos, expandimos nossa atuação combinando tecnologia, precisão e
-                        compromisso com resultados de impacto.
-                    </p>
-
-                    <p>
-                        Nossa trajetória é construída com ética, qualidade e foco em
-                        entregar sempre mais do que o esperado — transformando projetos em
-                        realidade e gerando valor para clientes, parceiros e comunidades.
-                    </p>
-                </div>
-            </div>
-
-            {/* PRINCÍPIOS */}
-            <div className="principles animate-fade-up" data-animate>
-                <h2 className="principles__title">Quem Somos</h2>
-
-                <div className="principles__grid">
-                    <div className="principles__item">
-                        <FaBullseye className="principles__icon" />
-                        <h3>Missão</h3>
-                        <p>
-                            Entregar soluções de engenharia com excelência, segurança e
-                            eficiência.
-                        </p>
-                    </div>
-
-                    <div className="principles__item">
-                        <FaEye className="principles__icon" />
-                        <h3>Visão</h3>
-                        <p>
-                            Ser referência nacional em infraestrutura e serviços
-                            especializados.
-                        </p>
-                    </div>
-
-                    <div className="principles__item">
-                        <FaHandshake className="principles__icon" />
-                        <h3>Valores</h3>
-                        <p>
-                            Ética, inovação, responsabilidade social e foco no cliente.
-                        </p>
-                    </div>
-                </div>
-            </div>
         </section>
     );
 }

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///Users/lucas.baptista/Documents/projetos/exitos-engenharia-next/src/app/page.tsx"],"sourcesContent":["\nimport About from \"@/components/about/About\";\nimport Clients from \"@/components/clients/Clients\";\nimport Contact from \"@/components/contact/Contact\";\nimport Footer from \"@/components/footer/Footer\";\nimport HeroHome from \"@/components/home/Home\";\nimport Projects from \"@/components/projects/Projects\";\nimport Services from \"@/components/services/Services\";\n\nexport default function Home() {\n  return (\n    <>\n      {/* <HeroHome />\n\n      <About />\n\n      <Services />\n\n      <Clients />\n\n      <Projects />\n\n      <Contact />\n\n      <Footer /> */}\n    </>\n  )\n}\n"],"names":[],"mappings":";;;;;;AASe,SAAS;IACtB,qBACE;AAgBJ"}}]
+}

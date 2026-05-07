@@ -1,5 +1,24 @@
-import Navbar from "@/components/navbar/Navbar";
-import "@/styles/_global.scss";
+import type { Metadata } from 'next';
+import { Inter, Manrope } from 'next/font/google';
+
+import '../styles/_global.scss';
+import Navbar from '@/components/navbar/Navbar';
+import SmoothScroll from '@/components/smoothScroll/SmoothScroll';
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-body',
+});
+
+const manrope = Manrope({
+  subsets: ['latin'],
+  variable: '--font-title',
+});
+
+export const metadata: Metadata = {
+  title: 'Exitus Engenharia',
+  description: 'Empresa de engenharia civil premium',
+};
 
 export default function RootLayout({
   children,
@@ -8,20 +27,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Exitos</title>
-      </head>
-      <body>
-        <header>
-          <Navbar />
-        </header>
-        <main>
+      <body className={`${inter.variable} ${manrope.variable}`}>
+        <Navbar />
+        <SmoothScroll>
           {children}
-        </main>
+        </SmoothScroll>
       </body>
     </html>
-
   );
 }

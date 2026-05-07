@@ -1,90 +1,210 @@
-"use client";
+'use client';
 
-import { FaEnvelope, FaPhoneAlt, FaLinkedin, FaInstagram, FaChartLine } from "react-icons/fa";
-import useScrollAnimation from "@/hooks/useScrollAnimation";
-import "./contact.scss";
+import { motion } from 'framer-motion';
+
+import './contact.scss';
+
+const easing = [0.22, 1, 0.36, 1] as const;
 
 export default function Contact() {
-    useScrollAnimation();
-
     return (
-        <section id="contato" className="contact hui-container">
-            {/* HEADER */}
-            <div className="contact__header animate-fade-up" data-animate>
-                <span className="contact__tag">Contato</span>
+        <section className='contact section' id='contato'>
 
-                <h2 className="contact__heading">
-                    Vamos iniciar uma parceria de sucesso?
-                </h2>
+            <div className='container'>
 
-                <p className="contact__description">
-                    Entre em contato e descubra como podemos crescer{" "}
-                    <span className="contact__nowrap">
-                        juntos <FaChartLine size={20} />
-                    </span>
-                </p>
-            </div>
+                <div className='contactGrid'>
 
-            <div className="contact__content">
-                {/* BLOCO DE INFORMAÇÕES */}
-                <div className="contact__info animate-fade-left" data-animate>
-                    <h3 className="contact__info-title">Informações de Contato</h3>
+                    {/* LEFT */}
+                    <motion.div
+                        className='contactLeft'
+                        initial={{
+                            opacity: 0,
+                            y: 60,
+                        }}
+                        whileInView={{
+                            opacity: 1,
+                            y: 0,
+                        }}
+                        viewport={{
+                            once: true,
+                            amount: 0.3,
+                        }}
+                        transition={{
+                            duration: 1,
+                            ease: easing,
+                        }}
+                    >
 
-                    <div className="contact__info-group">
-                        <p className="contact__info-item">
-                            <FaEnvelope /> contato@exitos.com
+                        <span className='contactLabel'>
+                            Contato
+                        </span>
+
+                        <h2 className='contactTitle'>
+                            Vamos construir
+                            <span>
+                                seu próximo
+                                projeto.
+                            </span>
+                        </h2>
+
+                        <p className='contactDescription'>
+                            Entre em contato com nossa equipe
+                            para desenvolver soluções técnicas
+                            inteligentes e alinhadas às necessidades
+                            do seu projeto.
                         </p>
 
-                        <p className="contact__info-item">
-                            <FaPhoneAlt /> (21) 99999-9999
-                        </p>
-                    </div>
+                        <div className='contactInfos'>
 
-                    <div className="contact__info-divider" />
+                            <div className='contactInfo'>
+                                <span>E-mail</span>
 
-                    <div className="contact__info-group">
-                        <a
-                            href="https://instagram.com"
-                            className="contact__info-link"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <FaInstagram /> Instagram
-                        </a>
+                                <strong>
+                                    contato.exitusengenharia@gmail.com
+                                </strong>
+                            </div>
 
-                        <a
-                            href="https://linkedin.com"
-                            className="contact__info-link"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <FaLinkedin /> LinkedIn
-                        </a>
-                    </div>
+                            <div className='contactInfo'>
+                                <span>Telefone</span>
+
+                                <strong>
+                                    (21) 9 7338-9918
+                                </strong>
+                            </div>
+
+                            <div className='contactInfo'>
+                                <span>Localização</span>
+
+                                <strong>
+                                    Brasil
+                                </strong>
+                            </div>
+
+                        </div>
+
+                    </motion.div>
+
+                    {/* RIGHT */}
+                    <motion.div
+                        className='contactRight'
+                        initial={{
+                            opacity: 0,
+                            y: 60,
+                        }}
+                        whileInView={{
+                            opacity: 1,
+                            y: 0,
+                        }}
+                        viewport={{
+                            once: true,
+                            amount: 0.3,
+                        }}
+                        transition={{
+                            duration: 1,
+                            delay: 0.15,
+                            ease: easing,
+                        }}
+                    >
+
+                        {/* WHATSAPP */}
+                        <div className='contactWhatsapp'>
+
+                            <a
+                                href='https://wa.me/5521973389918'
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                className='whatsappCard'
+                            >
+
+                                <span className='whatsappLabel'>
+                                    WhatsApp
+                                </span>
+
+                                <div className='whatsappContent'>
+
+                                    <h3>
+                                        Converse diretamente
+                                        com nossa equipe.
+                                    </h3>
+
+                                    <p>
+                                        Atendimento rápido para
+                                        orçamentos, dúvidas e
+                                        alinhamento técnico.
+                                    </p>
+
+                                </div>
+
+                                <div className='whatsappButton'>
+                                    Iniciar conversa
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                        {/* FORM + EMAIL */}
+                        <div className='contactFormWrapper'>
+
+                            {/* EMAIL */}
+                            <div className='contactEmail'>
+
+                                <div className='contactEmailTop'>
+
+                                    <span>
+                                        Contato por e-mail
+                                    </span>
+
+                                    <p>
+                                        Envie uma mensagem para nossa equipe
+                                        e responderemos o mais breve possível.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            {/* FORM */}
+                            <form className='contactForm'>
+
+                                <div className='formGroup'>
+                                    <input
+                                        type='text'
+                                        placeholder='Seu nome'
+                                    />
+                                </div>
+
+                                <div className='formGroup'>
+                                    <input
+                                        type='email'
+                                        placeholder='Seu e-mail'
+                                    />
+                                </div>
+
+                                <div className='formGroup'>
+                                    <textarea
+                                        placeholder='Fale sobre seu projeto'
+                                        rows={5}
+                                    />
+                                </div>
+
+                                <button
+                                    type='submit'
+                                    className='buttonPrimary'
+                                >
+                                    Enviar mensagem
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                    </motion.div>
+
                 </div>
 
-                {/* FORMULÁRIO */}
-                <form className="contact__form animate-fade-right" data-animate>
-                    <label>
-                        Nome
-                        <input type="text" placeholder="Seu nome" required />
-                    </label>
-
-                    <label>
-                        E-mail
-                        <input type="email" placeholder="seuemail@exemplo.com" required />
-                    </label>
-
-                    <label>
-                        Mensagem
-                        <textarea placeholder="Escreva sua mensagem..." required />
-                    </label>
-
-                    <button type="submit" className="contact__submit">
-                        Enviar mensagem
-                    </button>
-                </form>
             </div>
+
         </section>
     );
 }

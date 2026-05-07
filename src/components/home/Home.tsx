@@ -1,59 +1,225 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import heroImg from "@/assets/capa.avif";
-import { FaCog } from "react-icons/fa";
-import useScrollAnimation from "@/hooks/useScrollAnimation";
-import "./home.scss";
+import Image from 'next/image';
+import Link from 'next/link';
+
+import {
+    motion,
+    useScroll,
+    useTransform,
+} from 'framer-motion';
+
+import heroImage from '@/assets/hero.png';
+
+import './home.scss';
 
 export default function HeroHome() {
-    useScrollAnimation();
+
+    const { scrollY } = useScroll();
+
+    const imageY = useTransform(
+        scrollY,
+        [0, 1000],
+        [0, 220],
+    );
+
+    const contentY = useTransform(
+        scrollY,
+        [0, 1000],
+        [0, 120],
+    );
+
+    const opacity = useTransform(
+        scrollY,
+        [0, 600],
+        [1, 0],
+    );
 
     return (
-        <section className="hero" id="home">
-            <div className="hero__bg">
-                <Image
-                    src={heroImg}
-                    alt="Imagem institucional"
-                    fill
-                    className="hero__image"
-                    priority
-                />
-            </div>
+        <section className='hero' id='home'>
 
-            <div className="hero__overlay" />
-
-            <div className="hero__particles">
-                <span />
-                <span />
-                <span />
-                <span />
-                <span />
-            </div>
-
-            <FaCog className="hero__gear gear1" />
-            <FaCog className="hero__gear gear2" />
-
-            <div className="hero__shape" />
-
-            <div
-                className="hero__content animate-fade-up"
-                data-animate
+            {/* BACKGROUND */}
+            <motion.div
+                className='heroBackground'
+                style={{
+                    y: imageY,
+                }}
             >
-                <h1>
-                    Construindo Soluções<br />
-                    <span>com Tecnologia e Precisão</span>
-                </h1>
 
-                <p>
-                    Engenharia moderna, inovação e excelência para impulsionar o seu
-                    projeto.
-                </p>
+                <Image
+                    src={heroImage}
+                    alt='Projeto de engenharia civil'
+                    fill
+                    priority
+                    sizes='100vw'
+                    className='heroImage'
+                />
 
-                <a href="#servicos" className="hero__cta animate-zoom-in" data-animate>
-                    Saiba mais
-                </a>
-            </div>
+            </motion.div>
+
+            {/* OVERLAY */}
+            <div className='heroOverlay' />
+
+            {/* NOISE */}
+            <div className='heroNoise' />
+
+            {/* CONTENT */}
+            <motion.div
+                className='container heroContainer'
+                style={{
+                    y: contentY,
+                    opacity,
+                }}
+            >
+
+                <motion.div
+                    className='heroContent'
+                    initial={{
+                        opacity: 0,
+                        y: 60,
+                    }}
+                    animate={{
+                        opacity: 1,
+                        y: 0,
+                    }}
+                    transition={{
+                        duration: 1.2,
+                        ease: [0.22, 1, 0.36, 1],
+                    }}
+                >
+
+                    {/* EYEBROW */}
+                    <span className='heroEyebrow'>
+                        Engenharia Civil Premium
+                    </span>
+
+                    {/* TITLE */}
+                    <h1 className='heroTitle'>
+
+                        <motion.span
+                            initial={{
+                                opacity: 0,
+                                y: 80,
+                            }}
+                            animate={{
+                                opacity: 1,
+                                y: 0,
+                            }}
+                            transition={{
+                                delay: 0.15,
+                                duration: 1,
+                                ease: [0.22, 1, 0.36, 1],
+                            }}
+                        >
+                            Construindo
+                        </motion.span>
+
+                        <motion.span
+                            className='heroAccent'
+                            initial={{
+                                opacity: 0,
+                                y: 80,
+                            }}
+                            animate={{
+                                opacity: 1,
+                                y: 0,
+                            }}
+                            transition={{
+                                delay: 0.3,
+                                duration: 1,
+                                ease: [0.22, 1, 0.36, 1],
+                            }}
+                        >
+                            estruturas
+                            inteligentes
+                        </motion.span>
+
+                    </h1>
+
+                    {/* DESCRIPTION */}
+                    <motion.p
+                        className='heroDescription'
+                        initial={{
+                            opacity: 0,
+                            y: 32,
+                        }}
+                        animate={{
+                            opacity: 1,
+                            y: 0,
+                        }}
+                        transition={{
+                            delay: 0.5,
+                            duration: 1,
+                            ease: [0.22, 1, 0.36, 1],
+                        }}
+                    >
+                        Soluções em engenharia civil com foco em
+                        precisão técnica, planejamento estratégico
+                        e execução de alto padrão para projetos
+                        modernos e duradouros.
+                    </motion.p>
+
+                    {/* ACTIONS */}
+                    <motion.div
+                        className='heroActions'
+                        initial={{
+                            opacity: 0,
+                            y: 32,
+                        }}
+                        animate={{
+                            opacity: 1,
+                            y: 0,
+                        }}
+                        transition={{
+                            delay: 0.7,
+                            duration: 1,
+                            ease: [0.22, 1, 0.36, 1],
+                        }}
+                    >
+
+                        <Link
+                            href='#servicos'
+                            className='buttonPrimary'
+                        >
+                            Conheça nossos serviços
+                        </Link>
+
+                        <Link
+                            href='#projetos'
+                            className='heroSecondaryButton'
+                        >
+                            Ver projetos
+                        </Link>
+
+                    </motion.div>
+
+                </motion.div>
+
+            </motion.div>
+
+            {/* SCROLL INDICATOR */}
+            <motion.div
+                className='heroScroll'
+                initial={{
+                    opacity: 0,
+                    y: 20,
+                }}
+                animate={{
+                    opacity: 1,
+                    y: 0,
+                }}
+                transition={{
+                    delay: 1.2,
+                    duration: 1,
+                }}
+            >
+
+                <span>Scroll</span>
+
+                <div className='heroScrollLine' />
+
+            </motion.div>
+
         </section>
     );
 }

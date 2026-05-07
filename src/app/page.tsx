@@ -16,9 +16,9 @@ export default function Home() {
 
       <Services />
 
-      <Clients />
+      {/* <Clients /> */}
 
-      <Projects />
+      {/* <Projects /> */}
 
       <Contact />
 

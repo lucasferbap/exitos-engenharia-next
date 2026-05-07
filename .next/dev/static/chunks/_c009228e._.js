@@ -1,0 +1,3392 @@
+(globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push([typeof document === "object" ? document.currentScript : undefined,
+"[project]/src/assets/about-hero.png (static in ecmascript, tag client)", ((__turbopack_context__) => {
+
+__turbopack_context__.v("/_next/static/media/about-hero.17cbd4e5.png");}),
+"[project]/src/assets/about-hero.png.mjs { IMAGE => \"[project]/src/assets/about-hero.png (static in ecmascript, tag client)\" } [app-client] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$about$2d$hero$2e$png__$28$static__in__ecmascript$2c$__tag__client$29$__ = __turbopack_context__.i("[project]/src/assets/about-hero.png (static in ecmascript, tag client)");
+;
+const __TURBOPACK__default__export__ = {
+    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$about$2d$hero$2e$png__$28$static__in__ecmascript$2c$__tag__client$29$__["default"],
+    width: 1024,
+    height: 1536,
+    blurWidth: 5,
+    blurHeight: 8,
+    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAICAIAAAC+k6JsAAAAi0lEQVR42gGAAH//AJ2uu6Ozvqe1v6m0vKakowClrrWpsLSrrrGeoaGKg3kAr7O2trm7u72/rK6tgnZoAJeRiaqmob28u8PAvqyYhQBHOSZlTTWRfWq6r6S6oo0APDEgUDwjXkUpjHJYt5qAADkvHkw5IWFJLZZ9Y7ucgAAzKxtLOSFwVjmkinC7m326FT6JA4ZUtwAAAABJRU5ErkJggg=="
+};
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/components/about/About.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>About
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$about$2d$hero$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$about$2d$hero$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/about-hero.png.mjs { IMAGE => "[project]/src/assets/about-hero.png (static in ecmascript, tag client)" } [app-client] (structured image object with data url, ecmascript)');
+'use client';
+;
+;
+;
+;
+;
+;
+const easing = [
+    0.22,
+    1,
+    0.36,
+    1
+];
+const fadeUp = {
+    hidden: {
+        opacity: 0,
+        y: 40
+    },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.9,
+            ease: easing
+        }
+    }
+};
+const stagger = {
+    hidden: {},
+    visible: {
+        transition: {
+            staggerChildren: 0.12
+        }
+    }
+};
+function About() {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(16);
+    if ($[0] !== "b6cbe22822ff8ce4681d69b7e25a1d127690ee486a4ee3d25a023fcea4cf72f7") {
+        for(let $i = 0; $i < 16; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "b6cbe22822ff8ce4681d69b7e25a1d127690ee486a4ee3d25a023fcea4cf72f7";
+    }
+    let t0;
+    let t1;
+    if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
+        t0 = {
+            once: true,
+            amount: 0.3
+        };
+        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+            className: "aboutLabel",
+            variants: fadeUp,
+            children: "Sobre a Exitus"
+        }, void 0, false, {
+            fileName: "[project]/src/components/about/About.tsx",
+            lineNumber: 46,
+            columnNumber: 10
+        }, this);
+        $[1] = t0;
+        $[2] = t1;
+    } else {
+        t0 = $[1];
+        t1 = $[2];
+    }
+    let t2;
+    if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+            className: "aboutTop",
+            variants: stagger,
+            initial: "hidden",
+            whileInView: "visible",
+            viewport: t0,
+            children: [
+                t1,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                    className: "aboutHeadlineWrapper",
+                    variants: fadeUp,
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                        className: "aboutHeadline",
+                        children: [
+                            "Engenharia com",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                children: "precisão, estratégia e execução."
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/about/About.tsx",
+                                lineNumber: 55,
+                                columnNumber: 226
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/about/About.tsx",
+                        lineNumber: 55,
+                        columnNumber: 182
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/components/about/About.tsx",
+                    lineNumber: 55,
+                    columnNumber: 119
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/about/About.tsx",
+            lineNumber: 55,
+            columnNumber: 10
+        }, this);
+        $[3] = t2;
+    } else {
+        t2 = $[3];
+    }
+    let t3;
+    let t4;
+    let t5;
+    if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
+        t3 = {
+            once: true,
+            amount: 0.3
+        };
+        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
+            variants: fadeUp,
+            children: "A Exitus Engenharia atua no desenvolvimento de projetos e execuções de engenharia civil com foco em qualidade construtiva, inovação e excelência operacional."
+        }, void 0, false, {
+            fileName: "[project]/src/components/about/About.tsx",
+            lineNumber: 68,
+            columnNumber: 10
+        }, this);
+        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
+            variants: fadeUp,
+            children: "Nossa atuação combina planejamento técnico, inteligência estrutural e acompanhamento rigoroso para entregar soluções modernas, eficientes e duradouras."
+        }, void 0, false, {
+            fileName: "[project]/src/components/about/About.tsx",
+            lineNumber: 69,
+            columnNumber: 10
+        }, this);
+        $[4] = t3;
+        $[5] = t4;
+        $[6] = t5;
+    } else {
+        t3 = $[4];
+        t4 = $[5];
+        t5 = $[6];
+    }
+    let t6;
+    if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
+        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "aboutNumberItem",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                    children: "+12"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/about/About.tsx",
+                    lineNumber: 80,
+                    columnNumber: 43
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    children: "Anos de experiência"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/about/About.tsx",
+                    lineNumber: 80,
+                    columnNumber: 63
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/about/About.tsx",
+            lineNumber: 80,
+            columnNumber: 10
+        }, this);
+        $[7] = t6;
+    } else {
+        t6 = $[7];
+    }
+    let t7;
+    if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
+        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "aboutNumberItem",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                    children: "+80"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/about/About.tsx",
+                    lineNumber: 87,
+                    columnNumber: 43
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    children: "Projetos entregues"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/about/About.tsx",
+                    lineNumber: 87,
+                    columnNumber: 63
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/about/About.tsx",
+            lineNumber: 87,
+            columnNumber: 10
+        }, this);
+        $[8] = t7;
+    } else {
+        t7 = $[8];
+    }
+    let t8;
+    if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
+        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+            className: "aboutText",
+            variants: stagger,
+            initial: "hidden",
+            whileInView: "visible",
+            viewport: t3,
+            children: [
+                t4,
+                t5,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                    className: "aboutNumbers",
+                    variants: fadeUp,
+                    children: [
+                        t6,
+                        t7,
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "aboutNumberItem",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                    children: "100%"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/about/About.tsx",
+                                    lineNumber: 94,
+                                    columnNumber: 220
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    children: "Compromisso técnico"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/about/About.tsx",
+                                    lineNumber: 94,
+                                    columnNumber: 241
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/about/About.tsx",
+                            lineNumber: 94,
+                            columnNumber: 187
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/about/About.tsx",
+                    lineNumber: 94,
+                    columnNumber: 124
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/about/About.tsx",
+            lineNumber: 94,
+            columnNumber: 10
+        }, this);
+        $[9] = t8;
+    } else {
+        t8 = $[9];
+    }
+    let t10;
+    let t11;
+    let t12;
+    let t9;
+    if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
+        t9 = {
+            opacity: 0,
+            scale: 1.04
+        };
+        t10 = {
+            opacity: 1,
+            scale: 1
+        };
+        t11 = {
+            once: true,
+            amount: 0.3
+        };
+        t12 = {
+            duration: 1.2,
+            ease: easing
+        };
+        $[10] = t10;
+        $[11] = t11;
+        $[12] = t12;
+        $[13] = t9;
+    } else {
+        t10 = $[10];
+        t11 = $[11];
+        t12 = $[12];
+        t9 = $[13];
+    }
+    let t13;
+    if ($[14] === Symbol.for("react.memo_cache_sentinel")) {
+        t13 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "aboutImageWrapper",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$about$2d$hero$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$about$2d$hero$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
+                alt: "Projeto Exitus Engenharia",
+                fill: true,
+                className: "aboutImage"
+            }, void 0, false, {
+                fileName: "[project]/src/components/about/About.tsx",
+                lineNumber: 132,
+                columnNumber: 46
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/about/About.tsx",
+            lineNumber: 132,
+            columnNumber: 11
+        }, this);
+        $[14] = t13;
+    } else {
+        t13 = $[14];
+    }
+    let t14;
+    if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
+        t14 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+            className: "about section",
+            id: "sobre",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "container",
+                children: [
+                    t2,
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "aboutContent",
+                        children: [
+                            t8,
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                className: "aboutVisual",
+                                initial: t9,
+                                whileInView: t10,
+                                viewport: t11,
+                                transition: t12,
+                                children: [
+                                    t13,
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                        className: "aboutFloatingCard",
+                                        initial: {
+                                            opacity: 0,
+                                            y: 32
+                                        },
+                                        whileInView: {
+                                            opacity: 1,
+                                            y: 0
+                                        },
+                                        viewport: {
+                                            once: true
+                                        },
+                                        transition: {
+                                            delay: 0.25,
+                                            duration: 0.8,
+                                            ease: easing
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "aboutFloatingLabel",
+                                                children: "Exitus Engenharia"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/about/About.tsx",
+                                                lineNumber: 151,
+                                                columnNumber: 16
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                children: "Construindo soluções inteligentes para projetos modernos."
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/about/About.tsx",
+                                                lineNumber: 151,
+                                                columnNumber: 77
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/about/About.tsx",
+                                        lineNumber: 139,
+                                        columnNumber: 226
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/about/About.tsx",
+                                lineNumber: 139,
+                                columnNumber: 122
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/about/About.tsx",
+                        lineNumber: 139,
+                        columnNumber: 88
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/about/About.tsx",
+                lineNumber: 139,
+                columnNumber: 57
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/about/About.tsx",
+            lineNumber: 139,
+            columnNumber: 11
+        }, this);
+        $[15] = t14;
+    } else {
+        t14 = $[15];
+    }
+    return t14;
+}
+_c = About;
+var _c;
+__turbopack_context__.k.register(_c, "About");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/components/contact/Contact.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Contact
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
+'use client';
+;
+;
+;
+;
+const easing = [
+    0.22,
+    1,
+    0.36,
+    1
+];
+function Contact() {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(21);
+    if ($[0] !== "39e4b5943c77b5e8703b476ae58a90689961e56aaab2257fbff81e1076d2a0f0") {
+        for(let $i = 0; $i < 21; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "39e4b5943c77b5e8703b476ae58a90689961e56aaab2257fbff81e1076d2a0f0";
+    }
+    let t0;
+    let t1;
+    let t2;
+    let t3;
+    let t4;
+    if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
+        t0 = {
+            opacity: 0,
+            y: 60
+        };
+        t1 = {
+            opacity: 1,
+            y: 0
+        };
+        t2 = {
+            once: true,
+            amount: 0.3
+        };
+        t3 = {
+            duration: 1,
+            ease: easing
+        };
+        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: "contactLabel",
+            children: "Contato"
+        }, void 0, false, {
+            fileName: "[project]/src/components/contact/Contact.tsx",
+            lineNumber: 37,
+            columnNumber: 10
+        }, this);
+        $[1] = t0;
+        $[2] = t1;
+        $[3] = t2;
+        $[4] = t3;
+        $[5] = t4;
+    } else {
+        t0 = $[1];
+        t1 = $[2];
+        t2 = $[3];
+        t3 = $[4];
+        t4 = $[5];
+    }
+    let t5;
+    let t6;
+    if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
+        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+            className: "contactTitle",
+            children: [
+                "Vamos construir",
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    children: "seu próximo projeto."
+                }, void 0, false, {
+                    fileName: "[project]/src/components/contact/Contact.tsx",
+                    lineNumber: 53,
+                    columnNumber: 54
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/contact/Contact.tsx",
+            lineNumber: 53,
+            columnNumber: 10
+        }, this);
+        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+            className: "contactDescription",
+            children: "Entre em contato com nossa equipe para desenvolver soluções técnicas inteligentes e alinhadas às necessidades do seu projeto."
+        }, void 0, false, {
+            fileName: "[project]/src/components/contact/Contact.tsx",
+            lineNumber: 54,
+            columnNumber: 10
+        }, this);
+        $[6] = t5;
+        $[7] = t6;
+    } else {
+        t5 = $[6];
+        t6 = $[7];
+    }
+    let t7;
+    if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
+        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "contactInfo",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    children: "E-mail"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/contact/Contact.tsx",
+                    lineNumber: 63,
+                    columnNumber: 39
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                    children: "contato.exitusengenharia@gmail.com"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/contact/Contact.tsx",
+                    lineNumber: 63,
+                    columnNumber: 58
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/contact/Contact.tsx",
+            lineNumber: 63,
+            columnNumber: 10
+        }, this);
+        $[8] = t7;
+    } else {
+        t7 = $[8];
+    }
+    let t8;
+    if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
+        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "contactInfo",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    children: "Telefone"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/contact/Contact.tsx",
+                    lineNumber: 70,
+                    columnNumber: 39
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                    children: "(21) 9 7338-9918"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/contact/Contact.tsx",
+                    lineNumber: 70,
+                    columnNumber: 60
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/contact/Contact.tsx",
+            lineNumber: 70,
+            columnNumber: 10
+        }, this);
+        $[9] = t8;
+    } else {
+        t8 = $[9];
+    }
+    let t9;
+    if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
+        t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+            className: "contactLeft",
+            initial: t0,
+            whileInView: t1,
+            viewport: t2,
+            transition: t3,
+            children: [
+                t4,
+                t5,
+                t6,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "contactInfos",
+                    children: [
+                        t7,
+                        t8,
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "contactInfo",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    children: "Localização"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/contact/Contact.tsx",
+                                    lineNumber: 77,
+                                    columnNumber: 185
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                    children: "Brasil"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/contact/Contact.tsx",
+                                    lineNumber: 77,
+                                    columnNumber: 209
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/contact/Contact.tsx",
+                            lineNumber: 77,
+                            columnNumber: 156
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/contact/Contact.tsx",
+                    lineNumber: 77,
+                    columnNumber: 118
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/contact/Contact.tsx",
+            lineNumber: 77,
+            columnNumber: 10
+        }, this);
+        $[10] = t9;
+    } else {
+        t9 = $[10];
+    }
+    let t10;
+    let t11;
+    let t12;
+    let t13;
+    if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
+        t10 = {
+            opacity: 0,
+            y: 60
+        };
+        t11 = {
+            opacity: 1,
+            y: 0
+        };
+        t12 = {
+            once: true,
+            amount: 0.3
+        };
+        t13 = {
+            duration: 1,
+            delay: 0.15,
+            ease: easing
+        };
+        $[11] = t10;
+        $[12] = t11;
+        $[13] = t12;
+        $[14] = t13;
+    } else {
+        t10 = $[11];
+        t11 = $[12];
+        t12 = $[13];
+        t13 = $[14];
+    }
+    let t14;
+    if ($[15] === Symbol.for("react.memo_cache_sentinel")) {
+        t14 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: "whatsappLabel",
+            children: "WhatsApp"
+        }, void 0, false, {
+            fileName: "[project]/src/components/contact/Contact.tsx",
+            lineNumber: 116,
+            columnNumber: 11
+        }, this);
+        $[15] = t14;
+    } else {
+        t14 = $[15];
+    }
+    let t15;
+    if ($[16] === Symbol.for("react.memo_cache_sentinel")) {
+        t15 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "contactWhatsapp",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                href: "https://wa.me/5521973389918",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                className: "whatsappCard",
+                children: [
+                    t14,
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "whatsappContent",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                children: "Converse diretamente com nossa equipe."
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/contact/Contact.tsx",
+                                lineNumber: 123,
+                                columnNumber: 187
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                children: "Atendimento rápido para orçamentos, dúvidas e alinhamento técnico."
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/contact/Contact.tsx",
+                                lineNumber: 123,
+                                columnNumber: 234
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/contact/Contact.tsx",
+                        lineNumber: 123,
+                        columnNumber: 154
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "whatsappButton",
+                        children: "Iniciar conversa"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/contact/Contact.tsx",
+                        lineNumber: 123,
+                        columnNumber: 313
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/contact/Contact.tsx",
+                lineNumber: 123,
+                columnNumber: 44
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/contact/Contact.tsx",
+            lineNumber: 123,
+            columnNumber: 11
+        }, this);
+        $[16] = t15;
+    } else {
+        t15 = $[16];
+    }
+    let t16;
+    if ($[17] === Symbol.for("react.memo_cache_sentinel")) {
+        t16 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "contactEmail",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "contactEmailTop",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        children: "Contato por e-mail"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/contact/Contact.tsx",
+                        lineNumber: 130,
+                        columnNumber: 74
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        children: "Envie uma mensagem para nossa equipe e responderemos o mais breve possível."
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/contact/Contact.tsx",
+                        lineNumber: 130,
+                        columnNumber: 105
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/contact/Contact.tsx",
+                lineNumber: 130,
+                columnNumber: 41
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/contact/Contact.tsx",
+            lineNumber: 130,
+            columnNumber: 11
+        }, this);
+        $[17] = t16;
+    } else {
+        t16 = $[17];
+    }
+    let t17;
+    if ($[18] === Symbol.for("react.memo_cache_sentinel")) {
+        t17 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "formGroup",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                type: "text",
+                placeholder: "Seu nome"
+            }, void 0, false, {
+                fileName: "[project]/src/components/contact/Contact.tsx",
+                lineNumber: 137,
+                columnNumber: 38
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/contact/Contact.tsx",
+            lineNumber: 137,
+            columnNumber: 11
+        }, this);
+        $[18] = t17;
+    } else {
+        t17 = $[18];
+    }
+    let t18;
+    if ($[19] === Symbol.for("react.memo_cache_sentinel")) {
+        t18 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "formGroup",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                type: "email",
+                placeholder: "Seu e-mail"
+            }, void 0, false, {
+                fileName: "[project]/src/components/contact/Contact.tsx",
+                lineNumber: 144,
+                columnNumber: 38
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/contact/Contact.tsx",
+            lineNumber: 144,
+            columnNumber: 11
+        }, this);
+        $[19] = t18;
+    } else {
+        t18 = $[19];
+    }
+    let t19;
+    if ($[20] === Symbol.for("react.memo_cache_sentinel")) {
+        t19 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+            className: "contact section",
+            id: "contato",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "container",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "contactGrid",
+                    children: [
+                        t9,
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                            className: "contactRight",
+                            initial: t10,
+                            whileInView: t11,
+                            viewport: t12,
+                            transition: t13,
+                            children: [
+                                t15,
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "contactFormWrapper",
+                                    children: [
+                                        t16,
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
+                                            className: "contactForm",
+                                            children: [
+                                                t17,
+                                                t18,
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "formGroup",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
+                                                        placeholder: "Fale sobre seu projeto",
+                                                        rows: 5
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/contact/Contact.tsx",
+                                                        lineNumber: 151,
+                                                        columnNumber: 335
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/contact/Contact.tsx",
+                                                    lineNumber: 151,
+                                                    columnNumber: 308
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                    type: "submit",
+                                                    className: "buttonPrimary",
+                                                    children: "Enviar mensagem"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/contact/Contact.tsx",
+                                                    lineNumber: 151,
+                                                    columnNumber: 399
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/contact/Contact.tsx",
+                                            lineNumber: 151,
+                                            columnNumber: 268
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/contact/Contact.tsx",
+                                    lineNumber: 151,
+                                    columnNumber: 227
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/contact/Contact.tsx",
+                            lineNumber: 151,
+                            columnNumber: 121
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/contact/Contact.tsx",
+                    lineNumber: 151,
+                    columnNumber: 88
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/contact/Contact.tsx",
+                lineNumber: 151,
+                columnNumber: 61
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/contact/Contact.tsx",
+            lineNumber: 151,
+            columnNumber: 11
+        }, this);
+        $[20] = t19;
+    } else {
+        t19 = $[20];
+    }
+    return t19;
+}
+_c = Contact;
+var _c;
+__turbopack_context__.k.register(_c, "Contact");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/components/footer/Footer.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Footer
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-icons/fa/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$logo_desktop$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$logo_desktop$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/logo_desktop.png.mjs { IMAGE => "[project]/src/assets/logo_desktop.png (static in ecmascript, tag client)" } [app-client] (structured image object with data url, ecmascript)');
+'use client';
+;
+;
+;
+;
+;
+;
+;
+const navigation = [
+    {
+        label: 'Início',
+        href: '#'
+    },
+    {
+        label: 'Sobre',
+        href: '#sobre'
+    },
+    {
+        label: 'Serviços',
+        href: '#servicos'
+    },
+    {
+        label: 'Contato',
+        href: '#contato'
+    }
+];
+function Footer() {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(11);
+    if ($[0] !== "65c676b547b3b9b13e59a3392da91fd06dcb96c0517e165d5c9c1315d5228552") {
+        for(let $i = 0; $i < 11; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "65c676b547b3b9b13e59a3392da91fd06dcb96c0517e165d5c9c1315d5228552";
+    }
+    let t0;
+    if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
+        t0 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "footerBrand",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                    href: "/",
+                    className: "footerLogo",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$logo_desktop$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$logo_desktop$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
+                        alt: "Exitus Engenharia",
+                        priority: true
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/footer/Footer.tsx",
+                        lineNumber: 32,
+                        columnNumber: 77
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/src/components/footer/Footer.tsx",
+                    lineNumber: 32,
+                    columnNumber: 39
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                    className: "footerDescription",
+                    children: "Soluções em engenharia civil com foco em planejamento técnico, precisão estrutural e execução de alto padrão."
+                }, void 0, false, {
+                    fileName: "[project]/src/components/footer/Footer.tsx",
+                    lineNumber: 32,
+                    columnNumber: 151
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/footer/Footer.tsx",
+            lineNumber: 32,
+            columnNumber: 10
+        }, this);
+        $[1] = t0;
+    } else {
+        t0 = $[1];
+    }
+    let t1;
+    if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
+        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: "footerLabel",
+            children: "Navegação"
+        }, void 0, false, {
+            fileName: "[project]/src/components/footer/Footer.tsx",
+            lineNumber: 39,
+            columnNumber: 10
+        }, this);
+        $[2] = t1;
+    } else {
+        t1 = $[2];
+    }
+    let t2;
+    if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "footerColumn",
+            children: [
+                t1,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+                    className: "footerNav",
+                    children: navigation.map(_FooterNavigationMap)
+                }, void 0, false, {
+                    fileName: "[project]/src/components/footer/Footer.tsx",
+                    lineNumber: 46,
+                    columnNumber: 44
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/footer/Footer.tsx",
+            lineNumber: 46,
+            columnNumber: 10
+        }, this);
+        $[3] = t2;
+    } else {
+        t2 = $[3];
+    }
+    let t3;
+    if ($[4] === Symbol.for("react.memo_cache_sentinel")) {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: "footerLabel",
+            children: "Contato"
+        }, void 0, false, {
+            fileName: "[project]/src/components/footer/Footer.tsx",
+            lineNumber: 53,
+            columnNumber: 10
+        }, this);
+        $[4] = t3;
+    } else {
+        t3 = $[4];
+    }
+    let t4;
+    if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
+        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "footerColumn",
+            children: [
+                t3,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "footerInfos",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                            href: "mailto:contato@exitusengenharia.com",
+                            children: "contato.exitusengenharia@gmail.com"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/footer/Footer.tsx",
+                            lineNumber: 60,
+                            columnNumber: 73
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                            href: "https://wa.me/552197338-9918",
+                            children: "(21) 9 7338-9918"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/footer/Footer.tsx",
+                            lineNumber: 60,
+                            columnNumber: 157
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            children: "Brasil"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/footer/Footer.tsx",
+                            lineNumber: 60,
+                            columnNumber: 216
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/footer/Footer.tsx",
+                    lineNumber: 60,
+                    columnNumber: 44
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/footer/Footer.tsx",
+            lineNumber: 60,
+            columnNumber: 10
+        }, this);
+        $[5] = t4;
+    } else {
+        t4 = $[5];
+    }
+    let t5;
+    if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
+        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: "footerLabel",
+            children: "Social"
+        }, void 0, false, {
+            fileName: "[project]/src/components/footer/Footer.tsx",
+            lineNumber: 67,
+            columnNumber: 10
+        }, this);
+        $[6] = t5;
+    } else {
+        t5 = $[6];
+    }
+    let t6;
+    if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
+        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            href: "#",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaInstagram"], {}, void 0, false, {
+                fileName: "[project]/src/components/footer/Footer.tsx",
+                lineNumber: 74,
+                columnNumber: 25
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/footer/Footer.tsx",
+            lineNumber: 74,
+            columnNumber: 10
+        }, this);
+        $[7] = t6;
+    } else {
+        t6 = $[7];
+    }
+    let t7;
+    if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
+        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "footerTop",
+            children: [
+                t0,
+                t2,
+                t4,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "footerColumn",
+                    children: [
+                        t5,
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "footerSocials",
+                            children: [
+                                t6,
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    href: "#",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FaLinkedinIn"], {}, void 0, false, {
+                                        fileName: "[project]/src/components/footer/Footer.tsx",
+                                        lineNumber: 81,
+                                        columnNumber: 133
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/footer/Footer.tsx",
+                                    lineNumber: 81,
+                                    columnNumber: 118
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/footer/Footer.tsx",
+                            lineNumber: 81,
+                            columnNumber: 83
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/footer/Footer.tsx",
+                    lineNumber: 81,
+                    columnNumber: 49
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/footer/Footer.tsx",
+            lineNumber: 81,
+            columnNumber: 10
+        }, this);
+        $[8] = t7;
+    } else {
+        t7 = $[8];
+    }
+    let t8;
+    if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
+        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "footerCopyright",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    children: "© 2026 Exitus Engenharia."
+                }, void 0, false, {
+                    fileName: "[project]/src/components/footer/Footer.tsx",
+                    lineNumber: 88,
+                    columnNumber: 43
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    children: "Todos os direitos reservados."
+                }, void 0, false, {
+                    fileName: "[project]/src/components/footer/Footer.tsx",
+                    lineNumber: 88,
+                    columnNumber: 81
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/footer/Footer.tsx",
+            lineNumber: 88,
+            columnNumber: 10
+        }, this);
+        $[9] = t8;
+    } else {
+        t8 = $[9];
+    }
+    let t9;
+    if ($[10] === Symbol.for("react.memo_cache_sentinel")) {
+        t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
+            className: "footer",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "container",
+                children: [
+                    t7,
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "footerBottom",
+                        children: [
+                            t8,
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "footerCredits",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        children: "Design & desenvolvimento por"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/footer/Footer.tsx",
+                                        lineNumber: 95,
+                                        columnNumber: 133
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: "https://wa.me/5521995374300",
+                                        target: "_blank",
+                                        rel: "noopener noreferrer",
+                                        children: "Lucas Fernandes"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/footer/Footer.tsx",
+                                        lineNumber: 95,
+                                        columnNumber: 178
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/footer/Footer.tsx",
+                                lineNumber: 95,
+                                columnNumber: 102
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/footer/Footer.tsx",
+                        lineNumber: 95,
+                        columnNumber: 68
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/footer/Footer.tsx",
+                lineNumber: 95,
+                columnNumber: 37
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/footer/Footer.tsx",
+            lineNumber: 95,
+            columnNumber: 10
+        }, this);
+        $[10] = t9;
+    } else {
+        t9 = $[10];
+    }
+    return t9;
+}
+_c = Footer;
+function _FooterNavigationMap(item) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+        href: item.href,
+        children: item.label
+    }, item.label, false, {
+        fileName: "[project]/src/components/footer/Footer.tsx",
+        lineNumber: 103,
+        columnNumber: 10
+    }, this);
+}
+var _c;
+__turbopack_context__.k.register(_c, "Footer");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/assets/hero.png (static in ecmascript, tag client)", ((__turbopack_context__) => {
+
+__turbopack_context__.v("/_next/static/media/hero.2e018cbd.png");}),
+"[project]/src/assets/hero.png.mjs { IMAGE => \"[project]/src/assets/hero.png (static in ecmascript, tag client)\" } [app-client] (structured image object with data url, ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>__TURBOPACK__default__export__
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$hero$2e$png__$28$static__in__ecmascript$2c$__tag__client$29$__ = __turbopack_context__.i("[project]/src/assets/hero.png (static in ecmascript, tag client)");
+;
+const __TURBOPACK__default__export__ = {
+    src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$hero$2e$png__$28$static__in__ecmascript$2c$__tag__client$29$__["default"],
+    width: 1448,
+    height: 1086,
+    blurWidth: 8,
+    blurHeight: 6,
+    blurDataURL: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAGCAIAAABxZ0isAAAAoUlEQVR42gGWAGn/AL28vLSzs769vb28vK+urre2tr69vbe2tgDX1tfNzMzNw7/brpnKjG+0qqeenqDDwsIAzs3NwcDA0ryy64JR4G04gXBrdHV2srGxAMTDw769vc+3rOdrMtpfKGVRS01OTpqamwC4t7i6ubm+r6jFe1m8clB0Z2BkZGSbmpsAgoKCfn19e3p7e3p6e3l5enl5enl6f39/E6tYMEA4yYEAAAAASUVORK5CYII="
+};
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/components/home/Home.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>HeroHome
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$scroll$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/value/use-scroll.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/value/use-transform.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$hero$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$hero$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__ = __turbopack_context__.i('[project]/src/assets/hero.png.mjs { IMAGE => "[project]/src/assets/hero.png (static in ecmascript, tag client)" } [app-client] (structured image object with data url, ecmascript)');
+;
+var _s = __turbopack_context__.k.signature();
+'use client';
+;
+;
+;
+;
+;
+;
+function HeroHome() {
+    _s();
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(39);
+    if ($[0] !== "a2890e5cbad6caeb8141ae369c80b53cc2e13ed3d05d79d0af67d0b4efb103af") {
+        for(let $i = 0; $i < 39; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "a2890e5cbad6caeb8141ae369c80b53cc2e13ed3d05d79d0af67d0b4efb103af";
+    }
+    const { scrollY } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$scroll$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useScroll"])();
+    let t0;
+    let t1;
+    if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
+        t0 = [
+            0,
+            1000
+        ];
+        t1 = [
+            0,
+            220
+        ];
+        $[1] = t0;
+        $[2] = t1;
+    } else {
+        t0 = $[1];
+        t1 = $[2];
+    }
+    const imageY = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTransform"])(scrollY, t0, t1);
+    let t2;
+    let t3;
+    if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
+        t2 = [
+            0,
+            1000
+        ];
+        t3 = [
+            0,
+            120
+        ];
+        $[3] = t2;
+        $[4] = t3;
+    } else {
+        t2 = $[3];
+        t3 = $[4];
+    }
+    const contentY = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTransform"])(scrollY, t2, t3);
+    let t4;
+    let t5;
+    if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
+        t4 = [
+            0,
+            600
+        ];
+        t5 = [
+            1,
+            0
+        ];
+        $[5] = t4;
+        $[6] = t5;
+    } else {
+        t4 = $[5];
+        t5 = $[6];
+    }
+    const opacity = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTransform"])(scrollY, t4, t5);
+    let t6;
+    if ($[7] !== imageY) {
+        t6 = {
+            y: imageY
+        };
+        $[7] = imageY;
+        $[8] = t6;
+    } else {
+        t6 = $[8];
+    }
+    let t7;
+    if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
+        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+            src: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$assets$2f$hero$2e$png$2e$mjs__$7b$__IMAGE__$3d3e$__$225b$project$5d2f$src$2f$assets$2f$hero$2e$png__$28$static__in__ecmascript$2c$__tag__client$2922$__$7d$__$5b$app$2d$client$5d$__$28$structured__image__object__with__data__url$2c$__ecmascript$29$__["default"],
+            alt: "Projeto de engenharia civil",
+            fill: true,
+            priority: true,
+            sizes: "100vw",
+            className: "heroImage"
+        }, void 0, false, {
+            fileName: "[project]/src/components/home/Home.tsx",
+            lineNumber: 68,
+            columnNumber: 10
+        }, this);
+        $[9] = t7;
+    } else {
+        t7 = $[9];
+    }
+    let t8;
+    if ($[10] !== t6) {
+        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+            className: "heroBackground",
+            style: t6,
+            children: t7
+        }, void 0, false, {
+            fileName: "[project]/src/components/home/Home.tsx",
+            lineNumber: 75,
+            columnNumber: 10
+        }, this);
+        $[10] = t6;
+        $[11] = t8;
+    } else {
+        t8 = $[11];
+    }
+    let t10;
+    let t9;
+    if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
+        t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "heroOverlay"
+        }, void 0, false, {
+            fileName: "[project]/src/components/home/Home.tsx",
+            lineNumber: 84,
+            columnNumber: 10
+        }, this);
+        t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "heroNoise"
+        }, void 0, false, {
+            fileName: "[project]/src/components/home/Home.tsx",
+            lineNumber: 85,
+            columnNumber: 11
+        }, this);
+        $[12] = t10;
+        $[13] = t9;
+    } else {
+        t10 = $[12];
+        t9 = $[13];
+    }
+    let t11;
+    if ($[14] !== contentY || $[15] !== opacity) {
+        t11 = {
+            y: contentY,
+            opacity
+        };
+        $[14] = contentY;
+        $[15] = opacity;
+        $[16] = t11;
+    } else {
+        t11 = $[16];
+    }
+    let t12;
+    let t13;
+    if ($[17] === Symbol.for("react.memo_cache_sentinel")) {
+        t12 = {
+            opacity: 0,
+            y: 60
+        };
+        t13 = {
+            opacity: 1,
+            y: 0
+        };
+        $[17] = t12;
+        $[18] = t13;
+    } else {
+        t12 = $[17];
+        t13 = $[18];
+    }
+    let t14;
+    let t15;
+    if ($[19] === Symbol.for("react.memo_cache_sentinel")) {
+        t14 = {
+            duration: 1.2,
+            ease: [
+                0.22,
+                1,
+                0.36,
+                1
+            ]
+        };
+        t15 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: "heroEyebrow",
+            children: "Engenharia Civil Premium"
+        }, void 0, false, {
+            fileName: "[project]/src/components/home/Home.tsx",
+            lineNumber: 128,
+            columnNumber: 11
+        }, this);
+        $[19] = t14;
+        $[20] = t15;
+    } else {
+        t14 = $[19];
+        t15 = $[20];
+    }
+    let t16;
+    let t17;
+    if ($[21] === Symbol.for("react.memo_cache_sentinel")) {
+        t16 = {
+            opacity: 0,
+            y: 80
+        };
+        t17 = {
+            opacity: 1,
+            y: 0
+        };
+        $[21] = t16;
+        $[22] = t17;
+    } else {
+        t16 = $[21];
+        t17 = $[22];
+    }
+    let t18;
+    if ($[23] === Symbol.for("react.memo_cache_sentinel")) {
+        t18 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].span, {
+            initial: t16,
+            animate: t17,
+            transition: {
+                delay: 0.15,
+                duration: 1,
+                ease: [
+                    0.22,
+                    1,
+                    0.36,
+                    1
+                ]
+            },
+            children: "Construindo"
+        }, void 0, false, {
+            fileName: "[project]/src/components/home/Home.tsx",
+            lineNumber: 154,
+            columnNumber: 11
+        }, this);
+        $[23] = t18;
+    } else {
+        t18 = $[23];
+    }
+    let t19;
+    let t20;
+    if ($[24] === Symbol.for("react.memo_cache_sentinel")) {
+        t19 = {
+            opacity: 0,
+            y: 80
+        };
+        t20 = {
+            opacity: 1,
+            y: 0
+        };
+        $[24] = t19;
+        $[25] = t20;
+    } else {
+        t19 = $[24];
+        t20 = $[25];
+    }
+    let t21;
+    if ($[26] === Symbol.for("react.memo_cache_sentinel")) {
+        t21 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+            className: "heroTitle",
+            children: [
+                t18,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].span, {
+                    className: "heroAccent",
+                    initial: t19,
+                    animate: t20,
+                    transition: {
+                        delay: 0.3,
+                        duration: 1,
+                        ease: [
+                            0.22,
+                            1,
+                            0.36,
+                            1
+                        ]
+                    },
+                    children: "estruturas inteligentes"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/home/Home.tsx",
+                    lineNumber: 182,
+                    columnNumber: 42
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/home/Home.tsx",
+            lineNumber: 182,
+            columnNumber: 11
+        }, this);
+        $[26] = t21;
+    } else {
+        t21 = $[26];
+    }
+    let t22;
+    let t23;
+    if ($[27] === Symbol.for("react.memo_cache_sentinel")) {
+        t22 = {
+            opacity: 0,
+            y: 32
+        };
+        t23 = {
+            opacity: 1,
+            y: 0
+        };
+        $[27] = t22;
+        $[28] = t23;
+    } else {
+        t22 = $[27];
+        t23 = $[28];
+    }
+    let t24;
+    if ($[29] === Symbol.for("react.memo_cache_sentinel")) {
+        t24 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
+            className: "heroDescription",
+            initial: t22,
+            animate: t23,
+            transition: {
+                delay: 0.5,
+                duration: 1,
+                ease: [
+                    0.22,
+                    1,
+                    0.36,
+                    1
+                ]
+            },
+            children: "Soluções em engenharia civil com foco em precisão técnica, planejamento estratégico e execução de alto padrão para projetos modernos e duradouros."
+        }, void 0, false, {
+            fileName: "[project]/src/components/home/Home.tsx",
+            lineNumber: 210,
+            columnNumber: 11
+        }, this);
+        $[29] = t24;
+    } else {
+        t24 = $[29];
+    }
+    let t25;
+    let t26;
+    if ($[30] === Symbol.for("react.memo_cache_sentinel")) {
+        t25 = {
+            opacity: 0,
+            y: 32
+        };
+        t26 = {
+            opacity: 1,
+            y: 0
+        };
+        $[30] = t25;
+        $[31] = t26;
+    } else {
+        t25 = $[30];
+        t26 = $[31];
+    }
+    let t27;
+    if ($[32] === Symbol.for("react.memo_cache_sentinel")) {
+        t27 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+            className: "heroContent",
+            initial: t12,
+            animate: t13,
+            transition: t14,
+            children: [
+                t15,
+                t21,
+                t24,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                    className: "heroActions",
+                    initial: t25,
+                    animate: t26,
+                    transition: {
+                        delay: 0.7,
+                        duration: 1,
+                        ease: [
+                            0.22,
+                            1,
+                            0.36,
+                            1
+                        ]
+                    },
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            href: "#servicos",
+                            className: "buttonPrimary",
+                            children: "Conheça nossos serviços"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/home/Home.tsx",
+                            lineNumber: 242,
+                            columnNumber: 10
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            href: "#projetos",
+                            className: "heroSecondaryButton",
+                            children: "Ver projetos"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/home/Home.tsx",
+                            lineNumber: 242,
+                            columnNumber: 89
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/home/Home.tsx",
+                    lineNumber: 238,
+                    columnNumber: 107
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/home/Home.tsx",
+            lineNumber: 238,
+            columnNumber: 11
+        }, this);
+        $[32] = t27;
+    } else {
+        t27 = $[32];
+    }
+    let t28;
+    if ($[33] !== t11) {
+        t28 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+            className: "container heroContainer",
+            style: t11,
+            children: t27
+        }, void 0, false, {
+            fileName: "[project]/src/components/home/Home.tsx",
+            lineNumber: 249,
+            columnNumber: 11
+        }, this);
+        $[33] = t11;
+        $[34] = t28;
+    } else {
+        t28 = $[34];
+    }
+    let t29;
+    if ($[35] === Symbol.for("react.memo_cache_sentinel")) {
+        t29 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+            className: "heroScroll",
+            initial: {
+                opacity: 0,
+                y: 20
+            },
+            animate: {
+                opacity: 1,
+                y: 0
+            },
+            transition: {
+                delay: 1.2,
+                duration: 1
+            },
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    children: "Scroll"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/home/Home.tsx",
+                    lineNumber: 266,
+                    columnNumber: 8
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "heroScrollLine"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/home/Home.tsx",
+                    lineNumber: 266,
+                    columnNumber: 27
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/home/Home.tsx",
+            lineNumber: 257,
+            columnNumber: 11
+        }, this);
+        $[35] = t29;
+    } else {
+        t29 = $[35];
+    }
+    let t30;
+    if ($[36] !== t28 || $[37] !== t8) {
+        t30 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+            className: "hero",
+            id: "home",
+            children: [
+                t8,
+                t9,
+                t10,
+                t28,
+                t29
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/home/Home.tsx",
+            lineNumber: 273,
+            columnNumber: 11
+        }, this);
+        $[36] = t28;
+        $[37] = t8;
+        $[38] = t30;
+    } else {
+        t30 = $[38];
+    }
+    return t30;
+}
+_s(HeroHome, "0VPT04tATOA9pHqtBA2bS8ZrAM4=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$scroll$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useScroll"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTransform"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTransform"],
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTransform"]
+    ];
+});
+_c = HeroHome;
+var _c;
+__turbopack_context__.k.register(_c, "HeroHome");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/components/services/Services.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Services
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+'use client';
+;
+;
+;
+;
+const services = [
+    {
+        number: '01',
+        title: 'Engenharia & Gestão',
+        description: 'Planejamento, gerenciamento e supervisão técnica para obras e projetos de engenharia de alta complexidade.',
+        items: [
+            'Gerenciamento e Supervisão de Projetos',
+            'Gerenciamento e Administração de Obras',
+            'Consultoria em Engenharia',
+            'Elaboração de Orçamentos',
+            'Soluções Técnicas alinhadas ao IBRAOP'
+        ]
+    },
+    {
+        number: '02',
+        title: 'Projetos Executivos',
+        description: 'Desenvolvimento de projetos completos com foco em eficiência técnica, segurança e viabilidade operacional.',
+        items: [
+            'Infraestrutura Viária',
+            'Pavimentação',
+            'Drenagem',
+            'Sinalização',
+            'Iluminação',
+            'Pontes',
+            'Contenção',
+            'Urbanização',
+            'Arquitetura',
+            'Estrutural',
+            'Hidrossanitário',
+            'Elétrico',
+            'Climatização',
+            'SPDA',
+            'Acessibilidade',
+            'Prevenção e Combate a Incêndio'
+        ]
+    },
+    {
+        number: '03',
+        title: 'Estudos Técnicos',
+        description: 'Levantamentos e estudos especializados para garantir precisão, segurança e inteligência construtiva.',
+        items: [
+            'Sondagem a Percussão',
+            'Estudos Geotécnicos',
+            'Levantamento Topográfico',
+            'Aerofotogrametria',
+            'Estudos Hidrológicos'
+        ]
+    },
+    {
+        number: '04',
+        title: 'Regularização & Legalização',
+        description: 'Processos técnicos e documentais para regularização imobiliária e adequação normativa.',
+        items: [
+            'Legalização de Imóveis',
+            'Regularização de Imóveis'
+        ]
+    }
+];
+const easing = [
+    0.22,
+    1,
+    0.36,
+    1
+];
+function Services() {
+    _s();
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(7);
+    if ($[0] !== "751f6673d1ddacbc73be02da9d03487f82755193682b2f3092ccbc5b91f0c6c7") {
+        for(let $i = 0; $i < 7; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "751f6673d1ddacbc73be02da9d03487f82755193682b2f3092ccbc5b91f0c6c7";
+    }
+    const [active, setActive] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
+    let t0;
+    if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
+        t0 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: "servicesLabel",
+            children: "Expertise Técnica"
+        }, void 0, false, {
+            fileName: "[project]/src/components/services/Services.tsx",
+            lineNumber: 40,
+            columnNumber: 10
+        }, this);
+        $[1] = t0;
+    } else {
+        t0 = $[1];
+    }
+    let t1;
+    if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
+        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "servicesTop",
+            children: [
+                t0,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                    className: "servicesTitle",
+                    children: [
+                        "Soluções completas",
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            children: "para engenharia e infraestrutura."
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/services/Services.tsx",
+                            lineNumber: 47,
+                            columnNumber: 91
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/services/Services.tsx",
+                    lineNumber: 47,
+                    columnNumber: 43
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/components/services/Services.tsx",
+            lineNumber: 47,
+            columnNumber: 10
+        }, this);
+        $[2] = t1;
+    } else {
+        t1 = $[2];
+    }
+    let t2;
+    if ($[3] !== active) {
+        t2 = services.map({
+            "Services[services.map()]": (service, index)=>{
+                const isActive = active === index;
+                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                    className: `serviceItem ${isActive ? "serviceItemActive" : ""}`,
+                    initial: {
+                        opacity: 0,
+                        y: 40
+                    },
+                    whileInView: {
+                        opacity: 1,
+                        y: 0
+                    },
+                    viewport: {
+                        once: true,
+                        amount: 0.2
+                    },
+                    transition: {
+                        duration: 0.9,
+                        delay: index * 0.08,
+                        ease: easing
+                    },
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            className: "serviceHeader",
+                            onClick: {
+                                "Services[services.map() > <button>.onClick]": ()=>setActive(isActive ? null : index)
+                            }["Services[services.map() > <button>.onClick]"],
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "serviceLeft",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "serviceNumber",
+                                            children: service.number
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/services/Services.tsx",
+                                            lineNumber: 72,
+                                            columnNumber: 90
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "serviceContent",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                    children: service.title
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/services/Services.tsx",
+                                                    lineNumber: 72,
+                                                    columnNumber: 177
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    children: service.description
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/services/Services.tsx",
+                                                    lineNumber: 72,
+                                                    columnNumber: 201
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/components/services/Services.tsx",
+                                            lineNumber: 72,
+                                            columnNumber: 145
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/services/Services.tsx",
+                                    lineNumber: 72,
+                                    columnNumber: 61
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "serviceIcon",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {}, void 0, false, {
+                                            fileName: "[project]/src/components/services/Services.tsx",
+                                            lineNumber: 72,
+                                            columnNumber: 270
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {}, void 0, false, {
+                                            fileName: "[project]/src/components/services/Services.tsx",
+                                            lineNumber: 72,
+                                            columnNumber: 278
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/components/services/Services.tsx",
+                                    lineNumber: 72,
+                                    columnNumber: 241
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/components/services/Services.tsx",
+                            lineNumber: 70,
+                            columnNumber: 12
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
+                            initial: false,
+                            children: isActive && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                className: "serviceBody",
+                                initial: {
+                                    height: 0,
+                                    opacity: 0
+                                },
+                                animate: {
+                                    height: "auto",
+                                    opacity: 1
+                                },
+                                exit: {
+                                    height: 0,
+                                    opacity: 0
+                                },
+                                transition: {
+                                    duration: 0.6,
+                                    ease: easing
+                                },
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "serviceGrid",
+                                    children: service.items.map(_ServicesServicesMapServiceItemsMap)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/components/services/Services.tsx",
+                                    lineNumber: 84,
+                                    columnNumber: 16
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/services/Services.tsx",
+                                lineNumber: 72,
+                                columnNumber: 347
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/services/Services.tsx",
+                            lineNumber: 72,
+                            columnNumber: 301
+                        }, this)
+                    ]
+                }, service.title, true, {
+                    fileName: "[project]/src/components/services/Services.tsx",
+                    lineNumber: 57,
+                    columnNumber: 16
+                }, this);
+            }
+        }["Services[services.map()]"]);
+        $[3] = active;
+        $[4] = t2;
+    } else {
+        t2 = $[4];
+    }
+    let t3;
+    if ($[5] !== t2) {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+            className: "services section",
+            id: "servicos",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "container",
+                children: [
+                    t1,
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "servicesList",
+                        children: t2
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/services/Services.tsx",
+                        lineNumber: 94,
+                        columnNumber: 93
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/services/Services.tsx",
+                lineNumber: 94,
+                columnNumber: 62
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/src/components/services/Services.tsx",
+            lineNumber: 94,
+            columnNumber: 10
+        }, this);
+        $[5] = t2;
+        $[6] = t3;
+    } else {
+        t3 = $[6];
+    }
+    return t3;
+}
+_s(Services, "LYMHw6xE17pbh6ai9qaw76OM0Ms=");
+_c = Services;
+function _ServicesServicesMapServiceItemsMap(item) {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+        className: "serviceTag",
+        initial: {
+            opacity: 0,
+            y: 16
+        },
+        animate: {
+            opacity: 1,
+            y: 0
+        },
+        transition: {
+            duration: 0.5,
+            ease: easing
+        },
+        children: item
+    }, item, false, {
+        fileName: "[project]/src/components/services/Services.tsx",
+        lineNumber: 103,
+        columnNumber: 10
+    }, this);
+}
+var _c;
+__turbopack_context__.k.register(_c, "Services");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/node_modules/motion-dom/dist/es/scroll/observe.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "observeTimeline",
+    ()=>observeTimeline
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/frameloop/frame.mjs [app-client] (ecmascript)");
+;
+function observeTimeline(update, timeline) {
+    let prevProgress;
+    const onFrame = ()=>{
+        const { currentTime } = timeline;
+        const percentage = currentTime === null ? 0 : currentTime.value;
+        const progress = percentage / 100;
+        if (prevProgress !== progress) {
+            update(progress);
+        }
+        prevProgress = progress;
+    };
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["frame"].preUpdate(onFrame, true);
+    return ()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cancelFrame"])(onFrame);
+}
+;
+ //# sourceMappingURL=observe.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/utils/can-use-native-timeline.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "canUseNativeTimeline",
+    ()=>canUseNativeTimeline
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$supports$2f$scroll$2d$timeline$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/utils/supports/scroll-timeline.mjs [app-client] (ecmascript)");
+;
+function canUseNativeTimeline(target) {
+    if (typeof window === "undefined") return false;
+    return target ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$supports$2f$scroll$2d$timeline$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supportsViewTimeline"])() : (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$supports$2f$scroll$2d$timeline$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supportsScrollTimeline"])();
+}
+;
+ //# sourceMappingURL=can-use-native-timeline.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/info.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "createScrollInfo",
+    ()=>createScrollInfo,
+    "updateScrollInfo",
+    ()=>updateScrollInfo
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$progress$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-utils/dist/es/progress.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$velocity$2d$per$2d$second$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-utils/dist/es/velocity-per-second.mjs [app-client] (ecmascript)");
+;
+/**
+ * A time in milliseconds, beyond which we consider the scroll velocity to be 0.
+ */ const maxElapsed = 50;
+const createAxisInfo = ()=>({
+        current: 0,
+        offset: [],
+        progress: 0,
+        scrollLength: 0,
+        targetOffset: 0,
+        targetLength: 0,
+        containerLength: 0,
+        velocity: 0
+    });
+const createScrollInfo = ()=>({
+        time: 0,
+        x: createAxisInfo(),
+        y: createAxisInfo()
+    });
+const keys = {
+    x: {
+        length: "Width",
+        position: "Left"
+    },
+    y: {
+        length: "Height",
+        position: "Top"
+    }
+};
+function updateAxisInfo(element, axisName, info, time) {
+    const axis = info[axisName];
+    const { length, position } = keys[axisName];
+    const prev = axis.current;
+    const prevTime = info.time;
+    axis.current = Math.abs(element[`scroll${position}`]);
+    axis.scrollLength = element[`scroll${length}`] - element[`client${length}`];
+    axis.offset.length = 0;
+    axis.offset[0] = 0;
+    axis.offset[1] = axis.scrollLength;
+    axis.progress = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$progress$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["progress"])(0, axis.scrollLength, axis.current);
+    const elapsed = time - prevTime;
+    axis.velocity = elapsed > maxElapsed ? 0 : (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$velocity$2d$per$2d$second$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["velocityPerSecond"])(axis.current - prev, elapsed);
+}
+function updateScrollInfo(element, info, time) {
+    updateAxisInfo(element, "x", info, time);
+    updateAxisInfo(element, "y", info, time);
+    info.time = time;
+}
+;
+ //# sourceMappingURL=info.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/offsets/inset.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "calcInset",
+    ()=>calcInset
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$is$2d$html$2d$element$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/utils/is-html-element.mjs [app-client] (ecmascript)");
+;
+function calcInset(element, container) {
+    const inset = {
+        x: 0,
+        y: 0
+    };
+    let current = element;
+    while(current && current !== container){
+        if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$is$2d$html$2d$element$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isHTMLElement"])(current)) {
+            inset.x += current.offsetLeft;
+            inset.y += current.offsetTop;
+            current = current.offsetParent;
+        } else if (current.tagName === "svg") {
+            /**
+             * This isn't an ideal approach to measuring the offset of <svg /> tags.
+             * It would be preferable, given they behave like HTMLElements in most ways
+             * to use offsetLeft/Top. But these don't exist on <svg />. Likewise we
+             * can't use .getBBox() like most SVG elements as these provide the offset
+             * relative to the SVG itself, which for <svg /> is usually 0x0.
+             */ const svgBoundingBox = current.getBoundingClientRect();
+            current = current.parentElement;
+            const parentBoundingBox = current.getBoundingClientRect();
+            inset.x += svgBoundingBox.left - parentBoundingBox.left;
+            inset.y += svgBoundingBox.top - parentBoundingBox.top;
+        } else if (current instanceof SVGGraphicsElement) {
+            const { x, y } = current.getBBox();
+            inset.x += x;
+            inset.y += y;
+            let svg = null;
+            let parent = current.parentNode;
+            while(!svg){
+                if (parent.tagName === "svg") {
+                    svg = parent;
+                }
+                parent = current.parentNode;
+            }
+            current = svg;
+        } else {
+            break;
+        }
+    }
+    return inset;
+}
+;
+ //# sourceMappingURL=inset.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/offsets/edge.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "namedEdges",
+    ()=>namedEdges,
+    "resolveEdge",
+    ()=>resolveEdge
+]);
+const namedEdges = {
+    start: 0,
+    center: 0.5,
+    end: 1
+};
+function resolveEdge(edge, length, inset = 0) {
+    let delta = 0;
+    /**
+     * If we have this edge defined as a preset, replace the definition
+     * with the numerical value.
+     */ if (edge in namedEdges) {
+        edge = namedEdges[edge];
+    }
+    /**
+     * Handle unit values
+     */ if (typeof edge === "string") {
+        const asNumber = parseFloat(edge);
+        if (edge.endsWith("px")) {
+            delta = asNumber;
+        } else if (edge.endsWith("%")) {
+            edge = asNumber / 100;
+        } else if (edge.endsWith("vw")) {
+            delta = asNumber / 100 * document.documentElement.clientWidth;
+        } else if (edge.endsWith("vh")) {
+            delta = asNumber / 100 * document.documentElement.clientHeight;
+        } else {
+            edge = asNumber;
+        }
+    }
+    /**
+     * If the edge is defined as a number, handle as a progress value.
+     */ if (typeof edge === "number") {
+        delta = length * edge;
+    }
+    return inset + delta;
+}
+;
+ //# sourceMappingURL=edge.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/offsets/offset.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "resolveOffset",
+    ()=>resolveOffset
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$edge$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/offsets/edge.mjs [app-client] (ecmascript)");
+;
+const defaultOffset = [
+    0,
+    0
+];
+function resolveOffset(offset, containerLength, targetLength, targetInset) {
+    let offsetDefinition = Array.isArray(offset) ? offset : defaultOffset;
+    let targetPoint = 0;
+    let containerPoint = 0;
+    if (typeof offset === "number") {
+        /**
+         * If we're provided offset: [0, 0.5, 1] then each number x should become
+         * [x, x], so we default to the behaviour of mapping 0 => 0 of both target
+         * and container etc.
+         */ offsetDefinition = [
+            offset,
+            offset
+        ];
+    } else if (typeof offset === "string") {
+        offset = offset.trim();
+        if (offset.includes(" ")) {
+            offsetDefinition = offset.split(" ");
+        } else {
+            /**
+             * If we're provided a definition like "100px" then we want to apply
+             * that only to the top of the target point, leaving the container at 0.
+             * Whereas a named offset like "end" should be applied to both.
+             */ offsetDefinition = [
+                offset,
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$edge$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["namedEdges"][offset] ? offset : `0`
+            ];
+        }
+    }
+    targetPoint = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$edge$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["resolveEdge"])(offsetDefinition[0], targetLength, targetInset);
+    containerPoint = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$edge$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["resolveEdge"])(offsetDefinition[1], containerLength);
+    return targetPoint - containerPoint;
+}
+;
+ //# sourceMappingURL=offset.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/offsets/presets.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "ScrollOffset",
+    ()=>ScrollOffset
+]);
+const ScrollOffset = {
+    Enter: [
+        [
+            0,
+            1
+        ],
+        [
+            1,
+            1
+        ]
+    ],
+    Exit: [
+        [
+            0,
+            0
+        ],
+        [
+            1,
+            0
+        ]
+    ],
+    Any: [
+        [
+            1,
+            0
+        ],
+        [
+            0,
+            1
+        ]
+    ],
+    All: [
+        [
+            0,
+            0
+        ],
+        [
+            1,
+            1
+        ]
+    ]
+};
+;
+ //# sourceMappingURL=presets.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/offsets/index.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "resolveOffsets",
+    ()=>resolveOffsets
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$interpolate$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/utils/interpolate.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$offsets$2f$default$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/animation/keyframes/offsets/default.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$clamp$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-utils/dist/es/clamp.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$inset$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/offsets/inset.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$offset$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/offsets/offset.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$presets$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/offsets/presets.mjs [app-client] (ecmascript)");
+;
+;
+;
+;
+;
+const point = {
+    x: 0,
+    y: 0
+};
+function getTargetSize(target) {
+    return "getBBox" in target && target.tagName !== "svg" ? target.getBBox() : {
+        width: target.clientWidth,
+        height: target.clientHeight
+    };
+}
+function resolveOffsets(container, info, options) {
+    const { offset: offsetDefinition = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$presets$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ScrollOffset"].All } = options;
+    const { target = container, axis = "y" } = options;
+    const lengthLabel = axis === "y" ? "height" : "width";
+    const inset = target !== container ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$inset$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["calcInset"])(target, container) : point;
+    /**
+     * Measure the target and container. If they're the same thing then we
+     * use the container's scrollWidth/Height as the target, from there
+     * all other calculations can remain the same.
+     */ const targetSize = target === container ? {
+        width: container.scrollWidth,
+        height: container.scrollHeight
+    } : getTargetSize(target);
+    const containerSize = {
+        width: container.clientWidth,
+        height: container.clientHeight
+    };
+    /**
+     * Reset the length of the resolved offset array rather than creating a new one.
+     * TODO: More reusable data structures for targetSize/containerSize would also be good.
+     */ info[axis].offset.length = 0;
+    /**
+     * Populate the offset array by resolving the user's offset definition into
+     * a list of pixel scroll offets.
+     */ let hasChanged = !info[axis].interpolate;
+    const numOffsets = offsetDefinition.length;
+    for(let i = 0; i < numOffsets; i++){
+        const offset = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$offset$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["resolveOffset"])(offsetDefinition[i], containerSize[lengthLabel], targetSize[lengthLabel], inset[axis]);
+        if (!hasChanged && offset !== info[axis].interpolatorOffsets[i]) {
+            hasChanged = true;
+        }
+        info[axis].offset[i] = offset;
+    }
+    /**
+     * If the pixel scroll offsets have changed, create a new interpolator function
+     * to map scroll value into a progress.
+     */ if (hasChanged) {
+        info[axis].interpolate = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$interpolate$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["interpolate"])(info[axis].offset, (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$offsets$2f$default$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["defaultOffset"])(offsetDefinition), {
+            clamp: false
+        });
+        info[axis].interpolatorOffsets = [
+            ...info[axis].offset
+        ];
+    }
+    info[axis].progress = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$clamp$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["clamp"])(0, 1, info[axis].interpolate(info[axis].current));
+}
+;
+ //# sourceMappingURL=index.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/on-scroll-handler.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "createOnScrollHandler",
+    ()=>createOnScrollHandler
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$warn$2d$once$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-utils/dist/es/warn-once.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$info$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/info.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/offsets/index.mjs [app-client] (ecmascript)");
+;
+;
+;
+function measure(container, target = container, info) {
+    /**
+     * Find inset of target within scrollable container
+     */ info.x.targetOffset = 0;
+    info.y.targetOffset = 0;
+    if (target !== container) {
+        let node = target;
+        while(node && node !== container){
+            info.x.targetOffset += node.offsetLeft;
+            info.y.targetOffset += node.offsetTop;
+            node = node.offsetParent;
+        }
+    }
+    info.x.targetLength = target === container ? target.scrollWidth : target.clientWidth;
+    info.y.targetLength = target === container ? target.scrollHeight : target.clientHeight;
+    info.x.containerLength = container.clientWidth;
+    info.y.containerLength = container.clientHeight;
+    /**
+     * In development mode ensure scroll containers aren't position: static as this makes
+     * it difficult to measure their relative positions.
+     */ if ("TURBOPACK compile-time truthy", 1) {
+        if (container && target && target !== container) {
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$warn$2d$once$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["warnOnce"])(getComputedStyle(container).position !== "static", "Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.");
+        }
+    }
+}
+function createOnScrollHandler(element, onScroll, info, options = {}) {
+    return {
+        measure: (time)=>{
+            measure(element, options.target, info);
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$info$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["updateScrollInfo"])(element, info, time);
+            if (options.offset || options.target) {
+                (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["resolveOffsets"])(element, info, options);
+            }
+        },
+        notify: ()=>onScroll(info)
+    };
+}
+;
+ //# sourceMappingURL=on-scroll-handler.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/track.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "scrollInfo",
+    ()=>scrollInfo
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$resize$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/resize/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/frameloop/frame.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$noop$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-utils/dist/es/noop.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$info$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/info.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$on$2d$scroll$2d$handler$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/on-scroll-handler.mjs [app-client] (ecmascript)");
+;
+;
+;
+;
+const scrollListeners = new WeakMap();
+const resizeListeners = new WeakMap();
+const onScrollHandlers = new WeakMap();
+const scrollSize = new WeakMap();
+const dimensionCheckProcesses = new WeakMap();
+const getEventTarget = (element)=>element === document.scrollingElement ? window : element;
+function scrollInfo(onScroll, { container = document.scrollingElement, trackContentSize = false, ...options } = {}) {
+    if (!container) return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$noop$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["noop"];
+    let containerHandlers = onScrollHandlers.get(container);
+    /**
+     * Get the onScroll handlers for this container.
+     * If one isn't found, create a new one.
+     */ if (!containerHandlers) {
+        containerHandlers = new Set();
+        onScrollHandlers.set(container, containerHandlers);
+    }
+    /**
+     * Create a new onScroll handler for the provided callback.
+     */ const info = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$info$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createScrollInfo"])();
+    const containerHandler = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$on$2d$scroll$2d$handler$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createOnScrollHandler"])(container, onScroll, info, options);
+    containerHandlers.add(containerHandler);
+    /**
+     * Check if there's a scroll event listener for this container.
+     * If not, create one.
+     */ if (!scrollListeners.has(container)) {
+        const measureAll = ()=>{
+            for (const handler of containerHandlers){
+                handler.measure(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["frameData"].timestamp);
+            }
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["frame"].preUpdate(notifyAll);
+        };
+        const notifyAll = ()=>{
+            for (const handler of containerHandlers){
+                handler.notify();
+            }
+        };
+        const listener = ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["frame"].read(measureAll);
+        scrollListeners.set(container, listener);
+        const target = getEventTarget(container);
+        window.addEventListener("resize", listener);
+        if (container !== document.documentElement) {
+            resizeListeners.set(container, (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$resize$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["resize"])(container, listener));
+        }
+        target.addEventListener("scroll", listener);
+        listener();
+    }
+    /**
+     * Enable content size tracking if requested and not already enabled.
+     */ if (trackContentSize && !dimensionCheckProcesses.has(container)) {
+        const listener = scrollListeners.get(container);
+        // Store initial scroll dimensions (object is reused to avoid allocation)
+        const size = {
+            width: container.scrollWidth,
+            height: container.scrollHeight
+        };
+        scrollSize.set(container, size);
+        // Add frame-based scroll dimension checking to detect content changes
+        const checkScrollDimensions = ()=>{
+            const newWidth = container.scrollWidth;
+            const newHeight = container.scrollHeight;
+            if (size.width !== newWidth || size.height !== newHeight) {
+                listener();
+                size.width = newWidth;
+                size.height = newHeight;
+            }
+        };
+        // Schedule with keepAlive=true to run every frame
+        const dimensionCheckProcess = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["frame"].read(checkScrollDimensions, true);
+        dimensionCheckProcesses.set(container, dimensionCheckProcess);
+    }
+    const listener = scrollListeners.get(container);
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["frame"].read(listener, false, true);
+    return ()=>{
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cancelFrame"])(listener);
+        /**
+         * Check if we even have any handlers for this container.
+         */ const currentHandlers = onScrollHandlers.get(container);
+        if (!currentHandlers) return;
+        currentHandlers.delete(containerHandler);
+        if (currentHandlers.size) return;
+        /**
+         * If no more handlers, remove the scroll listener too.
+         */ const scrollListener = scrollListeners.get(container);
+        scrollListeners.delete(container);
+        if (scrollListener) {
+            getEventTarget(container).removeEventListener("scroll", scrollListener);
+            resizeListeners.get(container)?.();
+            window.removeEventListener("resize", scrollListener);
+        }
+        // Clean up scroll dimension checking
+        const dimensionCheckProcess = dimensionCheckProcesses.get(container);
+        if (dimensionCheckProcess) {
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cancelFrame"])(dimensionCheckProcess);
+            dimensionCheckProcesses.delete(container);
+        }
+        scrollSize.delete(container);
+    };
+}
+;
+ //# sourceMappingURL=track.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/utils/offset-to-range.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "offsetToViewTimelineRange",
+    ()=>offsetToViewTimelineRange
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$presets$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/offsets/presets.mjs [app-client] (ecmascript)");
+;
+/**
+ * Maps from ProgressIntersection pairs used by Motion's preset offsets to
+ * ViewTimeline named ranges. Returns undefined for unrecognised patterns,
+ * which signals the caller to fall back to JS-based scroll tracking.
+ */ const presets = [
+    [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$presets$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ScrollOffset"].Enter,
+        "entry"
+    ],
+    [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$presets$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ScrollOffset"].Exit,
+        "exit"
+    ],
+    [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$presets$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ScrollOffset"].Any,
+        "cover"
+    ],
+    [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$offsets$2f$presets$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ScrollOffset"].All,
+        "contain"
+    ]
+];
+const stringToProgress = {
+    start: 0,
+    end: 1
+};
+function parseStringOffset(s) {
+    const parts = s.trim().split(/\s+/);
+    if (parts.length !== 2) return undefined;
+    const a = stringToProgress[parts[0]];
+    const b = stringToProgress[parts[1]];
+    if (a === undefined || b === undefined) return undefined;
+    return [
+        a,
+        b
+    ];
+}
+function normaliseOffset(offset) {
+    if (offset.length !== 2) return undefined;
+    const result = [];
+    for (const item of offset){
+        if (Array.isArray(item)) {
+            result.push(item);
+        } else if (typeof item === "string") {
+            const parsed = parseStringOffset(item);
+            if (!parsed) return undefined;
+            result.push(parsed);
+        } else {
+            return undefined;
+        }
+    }
+    return result;
+}
+function matchesPreset(offset, preset) {
+    const normalised = normaliseOffset(offset);
+    if (!normalised) return false;
+    for(let i = 0; i < 2; i++){
+        const o = normalised[i];
+        const p = preset[i];
+        if (o[0] !== p[0] || o[1] !== p[1]) return false;
+    }
+    return true;
+}
+function offsetToViewTimelineRange(offset) {
+    if (!offset) {
+        return {
+            rangeStart: "contain 0%",
+            rangeEnd: "contain 100%"
+        };
+    }
+    for (const [preset, name] of presets){
+        if (matchesPreset(offset, preset)) {
+            return {
+                rangeStart: `${name} 0%`,
+                rangeEnd: `${name} 100%`
+            };
+        }
+    }
+    return undefined;
+}
+;
+ //# sourceMappingURL=offset-to-range.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/utils/get-timeline.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "getTimeline",
+    ()=>getTimeline
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$track$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/track.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$can$2d$use$2d$native$2d$timeline$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/utils/can-use-native-timeline.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$offset$2d$to$2d$range$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/utils/offset-to-range.mjs [app-client] (ecmascript)");
+;
+;
+;
+const timelineCache = new Map();
+function scrollTimelineFallback(options) {
+    const currentTime = {
+        value: 0
+    };
+    const cancel = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$track$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["scrollInfo"])((info)=>{
+        currentTime.value = info[options.axis].progress * 100;
+    }, options);
+    return {
+        currentTime,
+        cancel
+    };
+}
+function getTimeline({ source, container, ...options }) {
+    const { axis } = options;
+    if (source) container = source;
+    let containerCache = timelineCache.get(container);
+    if (!containerCache) {
+        containerCache = new Map();
+        timelineCache.set(container, containerCache);
+    }
+    const targetKey = options.target ?? "self";
+    let targetCache = containerCache.get(targetKey);
+    if (!targetCache) {
+        targetCache = {};
+        containerCache.set(targetKey, targetCache);
+    }
+    const axisKey = axis + (options.offset ?? []).join(",");
+    if (!targetCache[axisKey]) {
+        if (options.target && (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$can$2d$use$2d$native$2d$timeline$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["canUseNativeTimeline"])(options.target)) {
+            const range = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$offset$2d$to$2d$range$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["offsetToViewTimelineRange"])(options.offset);
+            if (range) {
+                targetCache[axisKey] = new ViewTimeline({
+                    subject: options.target,
+                    axis
+                });
+            } else {
+                targetCache[axisKey] = scrollTimelineFallback({
+                    container,
+                    ...options
+                });
+            }
+        } else if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$can$2d$use$2d$native$2d$timeline$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["canUseNativeTimeline"])()) {
+            targetCache[axisKey] = new ScrollTimeline({
+                source: container,
+                axis
+            });
+        } else {
+            targetCache[axisKey] = scrollTimelineFallback({
+                container,
+                ...options
+            });
+        }
+    }
+    return targetCache[axisKey];
+}
+;
+ //# sourceMappingURL=get-timeline.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/attach-animation.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "attachToAnimation",
+    ()=>attachToAnimation
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$scroll$2f$observe$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/scroll/observe.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$can$2d$use$2d$native$2d$timeline$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/utils/can-use-native-timeline.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$get$2d$timeline$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/utils/get-timeline.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$offset$2d$to$2d$range$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/utils/offset-to-range.mjs [app-client] (ecmascript)");
+;
+;
+;
+;
+function attachToAnimation(animation, options) {
+    const timeline = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$get$2d$timeline$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getTimeline"])(options);
+    const range = options.target ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$offset$2d$to$2d$range$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["offsetToViewTimelineRange"])(options.offset) : undefined;
+    /**
+     * Use native timeline when:
+     * - No target: ScrollTimeline (existing behaviour)
+     * - Target with mappable offset: ViewTimeline with named range
+     * - Target with unmappable offset: fall back to JS observe
+     */ const useNative = options.target ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$can$2d$use$2d$native$2d$timeline$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["canUseNativeTimeline"])(options.target) && !!range : (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$can$2d$use$2d$native$2d$timeline$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["canUseNativeTimeline"])();
+    return animation.attachTimeline({
+        timeline: useNative ? timeline : undefined,
+        ...range && useNative && {
+            rangeStart: range.rangeStart,
+            rangeEnd: range.rangeEnd
+        },
+        observe: (valueAnimation)=>{
+            valueAnimation.pause();
+            return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$scroll$2f$observe$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["observeTimeline"])((progress)=>{
+                valueAnimation.time = valueAnimation.iterationDuration * progress;
+            }, timeline);
+        }
+    });
+}
+;
+ //# sourceMappingURL=attach-animation.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/attach-function.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "attachToFunction",
+    ()=>attachToFunction
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$scroll$2f$observe$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/scroll/observe.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$track$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/track.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$get$2d$timeline$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/utils/get-timeline.mjs [app-client] (ecmascript)");
+;
+;
+;
+/**
+ * If the onScroll function has two arguments, it's expecting
+ * more specific information about the scroll from scrollInfo.
+ */ function isOnScrollWithInfo(onScroll) {
+    return onScroll.length === 2;
+}
+function attachToFunction(onScroll, options) {
+    if (isOnScrollWithInfo(onScroll)) {
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$track$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["scrollInfo"])((info)=>{
+            onScroll(info[options.axis].progress, info);
+        }, options);
+    } else {
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$scroll$2f$observe$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["observeTimeline"])(onScroll, (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$get$2d$timeline$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getTimeline"])(options));
+    }
+}
+;
+ //# sourceMappingURL=attach-function.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/render/dom/scroll/index.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "scroll",
+    ()=>scroll
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$noop$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-utils/dist/es/noop.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$attach$2d$animation$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/attach-animation.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$attach$2d$function$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/attach-function.mjs [app-client] (ecmascript)");
+;
+;
+;
+function scroll(onScroll, { axis = "y", container = document.scrollingElement, ...options } = {}) {
+    if (!container) return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$noop$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["noop"];
+    const optionsWithDefaults = {
+        axis,
+        container,
+        ...options
+    };
+    return typeof onScroll === "function" ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$attach$2d$function$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["attachToFunction"])(onScroll, optionsWithDefaults) : (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$attach$2d$animation$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["attachToAnimation"])(onScroll, optionsWithDefaults);
+}
+;
+ //# sourceMappingURL=index.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/value/use-scroll.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "useScroll",
+    ()=>useScroll
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$supports$2f$scroll$2d$timeline$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/utils/supports/scroll-timeline.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/value/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-utils/dist/es/errors.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$offset$2d$to$2d$range$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/dom/scroll/utils/offset-to-range.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$constant$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/utils/use-constant.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$isomorphic$2d$effect$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/utils/use-isomorphic-effect.mjs [app-client] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+;
+;
+const createScrollMotionValues = ()=>({
+        scrollX: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motionValue"])(0),
+        scrollY: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motionValue"])(0),
+        scrollXProgress: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motionValue"])(0),
+        scrollYProgress: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motionValue"])(0)
+    });
+const isRefPending = (ref)=>{
+    if (!ref) return false;
+    return !ref.current;
+};
+function makeAccelerateConfig(axis, options, container, target) {
+    return {
+        factory: (animation)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["scroll"])(animation, {
+                ...options,
+                axis,
+                container: container?.current || undefined,
+                target: target?.current || undefined
+            }),
+        times: [
+            0,
+            1
+        ],
+        keyframes: [
+            0,
+            1
+        ],
+        ease: (v)=>v,
+        duration: 1
+    };
+}
+function canAccelerateScroll(target, offset) {
+    if (typeof window === "undefined") return false;
+    return target ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$supports$2f$scroll$2d$timeline$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supportsViewTimeline"])() && !!(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$utils$2f$offset$2d$to$2d$range$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["offsetToViewTimelineRange"])(offset) : (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$supports$2f$scroll$2d$timeline$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supportsScrollTimeline"])();
+}
+function useScroll({ container, target, ...options } = {}) {
+    const values = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$constant$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useConstant"])(createScrollMotionValues);
+    if (canAccelerateScroll(target, options.offset)) {
+        values.scrollXProgress.accelerate = makeAccelerateConfig("x", options, container, target);
+        values.scrollYProgress.accelerate = makeAccelerateConfig("y", options, container, target);
+    }
+    const scrollAnimation = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const needsStart = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(false);
+    const start = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "useScroll.useCallback[start]": ()=>{
+            scrollAnimation.current = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$dom$2f$scroll$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["scroll"])({
+                "useScroll.useCallback[start]": (_progress, { x, y })=>{
+                    values.scrollX.set(x.current);
+                    values.scrollXProgress.set(x.progress);
+                    values.scrollY.set(y.current);
+                    values.scrollYProgress.set(y.progress);
+                }
+            }["useScroll.useCallback[start]"], {
+                ...options,
+                container: container?.current || undefined,
+                target: target?.current || undefined
+            });
+            return ({
+                "useScroll.useCallback[start]": ()=>{
+                    scrollAnimation.current?.();
+                }
+            })["useScroll.useCallback[start]"];
+        }
+    }["useScroll.useCallback[start]"], [
+        container,
+        target,
+        JSON.stringify(options.offset)
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$isomorphic$2d$effect$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useIsomorphicLayoutEffect"])({
+        "useScroll.useIsomorphicLayoutEffect": ()=>{
+            needsStart.current = false;
+            if (isRefPending(container) || isRefPending(target)) {
+                needsStart.current = true;
+                return;
+            } else {
+                return start();
+            }
+        }
+    }["useScroll.useIsomorphicLayoutEffect"], [
+        start
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "useScroll.useEffect": ()=>{
+            if (needsStart.current) {
+                (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["invariant"])(!isRefPending(container), "Container ref is defined but not hydrated", "use-scroll-ref");
+                (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["invariant"])(!isRefPending(target), "Target ref is defined but not hydrated", "use-scroll-ref");
+                return start();
+            } else {
+                return;
+            }
+        }
+    }["useScroll.useEffect"], [
+        start
+    ]);
+    return values;
+}
+;
+ //# sourceMappingURL=use-scroll.mjs.map
+}),
+"[project]/node_modules/motion-dom/dist/es/utils/transform.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "transform",
+    ()=>transform
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$interpolate$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/utils/interpolate.mjs [app-client] (ecmascript)");
+;
+function transform(...args) {
+    const useImmediate = !Array.isArray(args[0]);
+    const argOffset = useImmediate ? 0 : -1;
+    const inputValue = args[0 + argOffset];
+    const inputRange = args[1 + argOffset];
+    const outputRange = args[2 + argOffset];
+    const options = args[3 + argOffset];
+    const interpolator = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$interpolate$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["interpolate"])(inputRange, outputRange, options);
+    return useImmediate ? interpolator(inputValue) : interpolator;
+}
+;
+ //# sourceMappingURL=transform.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/value/use-motion-value.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "useMotionValue",
+    ()=>useMotionValue
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/value/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$context$2f$MotionConfigContext$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/context/MotionConfigContext.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$constant$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/utils/use-constant.mjs [app-client] (ecmascript)");
+"use client";
+;
+;
+;
+;
+/**
+ * Creates a `MotionValue` to track the state and velocity of a value.
+ *
+ * Usually, these are created automatically. For advanced use-cases, like use with `useTransform`, you can create `MotionValue`s externally and pass them into the animated component via the `style` prop.
+ *
+ * ```jsx
+ * export const MyComponent = () => {
+ *   const scale = useMotionValue(1)
+ *
+ *   return <motion.div style={{ scale }} />
+ * }
+ * ```
+ *
+ * @param initial - The initial state.
+ *
+ * @public
+ */ function useMotionValue(initial) {
+    const value = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$constant$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useConstant"])({
+        "useMotionValue.useConstant[value]": ()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motionValue"])(initial)
+    }["useMotionValue.useConstant[value]"]);
+    /**
+     * If this motion value is being used in static mode, like on
+     * the Framer canvas, force components to rerender when the motion
+     * value is updated.
+     */ const { isStatic } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useContext"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$context$2f$MotionConfigContext$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MotionConfigContext"]);
+    if (isStatic) {
+        const [, setLatest] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(initial);
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+            "useMotionValue.useEffect": ()=>value.on("change", setLatest)
+        }["useMotionValue.useEffect"], []);
+    }
+    return value;
+}
+;
+ //# sourceMappingURL=use-motion-value.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/value/use-combine-values.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "useCombineMotionValues",
+    ()=>useCombineMotionValues
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/frameloop/frame.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$isomorphic$2d$effect$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/utils/use-isomorphic-effect.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/value/use-motion-value.mjs [app-client] (ecmascript)");
+"use client";
+;
+;
+;
+function useCombineMotionValues(values, combineValues) {
+    /**
+     * Initialise the returned motion value. This remains the same between renders.
+     */ const value = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useMotionValue"])(combineValues());
+    /**
+     * Create a function that will update the template motion value with the latest values.
+     * This is pre-bound so whenever a motion value updates it can schedule its
+     * execution in Framesync. If it's already been scheduled it won't be fired twice
+     * in a single frame.
+     */ const updateValue = ()=>value.set(combineValues());
+    /**
+     * Synchronously update the motion value with the latest values during the render.
+     * This ensures that within a React render, the styles applied to the DOM are up-to-date.
+     */ updateValue();
+    /**
+     * Subscribe to all motion values found within the template. Whenever any of them change,
+     * schedule an update.
+     */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$isomorphic$2d$effect$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useIsomorphicLayoutEffect"])({
+        "useCombineMotionValues.useIsomorphicLayoutEffect": ()=>{
+            const scheduleUpdate = {
+                "useCombineMotionValues.useIsomorphicLayoutEffect.scheduleUpdate": ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["frame"].preRender(updateValue, false, true)
+            }["useCombineMotionValues.useIsomorphicLayoutEffect.scheduleUpdate"];
+            const subscriptions = values.map({
+                "useCombineMotionValues.useIsomorphicLayoutEffect.subscriptions": (v)=>v.on("change", scheduleUpdate)
+            }["useCombineMotionValues.useIsomorphicLayoutEffect.subscriptions"]);
+            return ({
+                "useCombineMotionValues.useIsomorphicLayoutEffect": ()=>{
+                    subscriptions.forEach({
+                        "useCombineMotionValues.useIsomorphicLayoutEffect": (unsubscribe)=>unsubscribe()
+                    }["useCombineMotionValues.useIsomorphicLayoutEffect"]);
+                    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cancelFrame"])(updateValue);
+                }
+            })["useCombineMotionValues.useIsomorphicLayoutEffect"];
+        }
+    }["useCombineMotionValues.useIsomorphicLayoutEffect"]);
+    return value;
+}
+;
+ //# sourceMappingURL=use-combine-values.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/value/use-computed.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "useComputed",
+    ()=>useComputed
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/value/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$combine$2d$values$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/value/use-combine-values.mjs [app-client] (ecmascript)");
+"use client";
+;
+;
+function useComputed(compute) {
+    /**
+     * Open session of collectMotionValues. Any MotionValue that calls get()
+     * will be saved into this array.
+     */ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["collectMotionValues"].current = [];
+    compute();
+    const value = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$combine$2d$values$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCombineMotionValues"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["collectMotionValues"].current, compute);
+    /**
+     * Synchronously close session of collectMotionValues.
+     */ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["collectMotionValues"].current = undefined;
+    return value;
+}
+;
+ //# sourceMappingURL=use-computed.mjs.map
+}),
+"[project]/node_modules/framer-motion/dist/es/value/use-transform.mjs [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "useTransform",
+    ()=>useTransform
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/motion-dom/dist/es/utils/transform.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$constant$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/utils/use-constant.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$combine$2d$values$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/value/use-combine-values.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$computed$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/value/use-computed.mjs [app-client] (ecmascript)");
+"use client";
+;
+;
+;
+;
+function useTransform(input, inputRangeOrTransformer, outputRangeOrMap, options) {
+    if (typeof input === "function") {
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$computed$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useComputed"])(input);
+    }
+    /**
+     * Detect if outputRangeOrMap is an output map (object with keys)
+     * rather than an output range (array).
+     */ const isOutputMap = outputRangeOrMap !== undefined && !Array.isArray(outputRangeOrMap) && typeof inputRangeOrTransformer !== "function";
+    if (isOutputMap) {
+        return useMapTransform(input, inputRangeOrTransformer, outputRangeOrMap, options);
+    }
+    const outputRange = outputRangeOrMap;
+    const transformer = typeof inputRangeOrTransformer === "function" ? inputRangeOrTransformer : (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["transform"])(inputRangeOrTransformer, outputRange, options);
+    const result = Array.isArray(input) ? useListTransform(input, transformer) : useListTransform([
+        input
+    ], {
+        "useTransform.useListTransform": ([latest])=>transformer(latest)
+    }["useTransform.useListTransform"]);
+    const inputAccelerate = !Array.isArray(input) ? input.accelerate : undefined;
+    if (inputAccelerate && !inputAccelerate.isTransformed && typeof inputRangeOrTransformer !== "function" && Array.isArray(outputRangeOrMap) && options?.clamp !== false) {
+        result.accelerate = {
+            ...inputAccelerate,
+            times: inputRangeOrTransformer,
+            keyframes: outputRangeOrMap,
+            isTransformed: true,
+            ...options?.ease ? {
+                ease: options.ease
+            } : {}
+        };
+    }
+    return result;
+}
+function useListTransform(values, transformer) {
+    const latest = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$constant$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useConstant"])({
+        "useListTransform.useConstant[latest]": ()=>[]
+    }["useListTransform.useConstant[latest]"]);
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$value$2f$use$2d$combine$2d$values$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCombineMotionValues"])(values, {
+        "useListTransform.useCombineMotionValues": ()=>{
+            latest.length = 0;
+            const numValues = values.length;
+            for(let i = 0; i < numValues; i++){
+                latest[i] = values[i].get();
+            }
+            return transformer(latest);
+        }
+    }["useListTransform.useCombineMotionValues"]);
+}
+function useMapTransform(inputValue, inputRange, outputMap, options) {
+    /**
+     * Capture keys once to ensure hooks are called in consistent order.
+     */ const keys = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$constant$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useConstant"])({
+        "useMapTransform.useConstant[keys]": ()=>Object.keys(outputMap)
+    }["useMapTransform.useConstant[keys]"]);
+    const output = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$utils$2f$use$2d$constant$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useConstant"])({
+        "useMapTransform.useConstant[output]": ()=>({})
+    }["useMapTransform.useConstant[output]"]);
+    for (const key of keys){
+        output[key] = useTransform(inputValue, inputRange, outputMap[key], options);
+    }
+    return output;
+}
+;
+ //# sourceMappingURL=use-transform.mjs.map
+}),
+]);
+
+//# sourceMappingURL=_c009228e._.js.map

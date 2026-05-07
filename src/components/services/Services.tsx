@@ -1,126 +1,230 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import Image from "next/image";
-import servicosImg from "@/assets/servicos.jpg";
-import useScrollAnimation from "@/hooks/useScrollAnimation";
-import "./services.scss";
+import { useState } from 'react';
+
+import { AnimatePresence, motion } from 'framer-motion';
+
+import './services.scss';
 
 const services = [
   {
-    title: "Engenharia Elétrica",
-    subtitle: "Sistemas e instalações",
+    number: '01',
+    title: 'Engenharia & Gestão',
     description:
-      "Projetos elétricos completos, laudos técnicos, SPDA, automação, eficiência energética e adequação às normas.",
-    image: servicosImg,
+      'Planejamento, gerenciamento e supervisão técnica para obras e projetos de engenharia de alta complexidade.',
+
+    items: [
+      'Gerenciamento e Supervisão de Projetos',
+      'Gerenciamento e Administração de Obras',
+      'Consultoria em Engenharia',
+      'Elaboração de Orçamentos',
+      'Soluções Técnicas alinhadas ao IBRAOP',
+    ],
   },
+
   {
-    title: "Engenharia Civil",
-    subtitle: "Obras e estruturas",
+    number: '02',
+    title: 'Projetos Executivos',
     description:
-      "Execução, gerenciamento de obras, reformas, laudos estruturais e regularizações técnicas.",
-    image: servicosImg,
+      'Desenvolvimento de projetos completos com foco em eficiência técnica, segurança e viabilidade operacional.',
+
+    items: [
+      'Infraestrutura Viária',
+      'Pavimentação',
+      'Drenagem',
+      'Sinalização',
+      'Iluminação',
+      'Pontes',
+      'Contenção',
+      'Urbanização',
+      'Arquitetura',
+      'Estrutural',
+      'Hidrossanitário',
+      'Elétrico',
+      'Climatização',
+      'SPDA',
+      'Acessibilidade',
+      'Prevenção e Combate a Incêndio',
+    ],
   },
+
   {
-    title: "Automação Industrial",
-    subtitle: "Processos inteligentes",
+    number: '03',
+    title: 'Estudos Técnicos',
     description:
-      "Integração de sistemas, CLPs, sensores, supervisórios e controle de processos industriais.",
-    image: servicosImg,
+      'Levantamentos e estudos especializados para garantir precisão, segurança e inteligência construtiva.',
+
+    items: [
+      'Sondagem a Percussão',
+      'Estudos Geotécnicos',
+      'Levantamento Topográfico',
+      'Aerofotogrametria',
+      'Estudos Hidrológicos',
+    ],
   },
+
   {
-    title: "Manutenção Técnica",
-    subtitle: "Preventiva e corretiva",
+    number: '04',
+    title: 'Regularização & Legalização',
     description:
-      "Planos de manutenção, inspeções, relatórios técnicos e suporte especializado contínuo.",
-    image: servicosImg,
+      'Processos técnicos e documentais para regularização imobiliária e adequação normativa.',
+
+    items: [
+      'Legalização de Imóveis',
+      'Regularização de Imóveis',
+    ],
   },
 ];
 
-export default function ServicesSection() {
-  const [mobileIndex, setMobileIndex] = useState<number | null>(null);
+const easing = [0.22, 1, 0.36, 1] as const;
 
-  useScrollAnimation();
-
-  function openCard(index: number) {
-    if (typeof window === "undefined") return;
-
-    const isMobile = window.innerWidth <= 900;
-
-    if (isMobile) {
-      setMobileIndex(index);
-    }
-    // 👉 no desktop não faz nada no clique, só hover cuida do flip
-  }
-
-  function closeMobile() {
-    setMobileIndex(null);
-  }
+export default function Services() {
+  const [active, setActive] = useState<number | null>(0);
 
   return (
-    <section className="servicos hui-container" id="servicos">
-      <div className="servicos__header animate-fade-up" data-animate>
-        <span className="servicos__tag">Serviços</span>
-        <h2>Nossos Serviços</h2>
-        <p>Soluções completas em engenharia, inovação e tecnologia.</p>
-      </div>
+    <section className='services section' id='servicos'>
 
-      <div className="servicos__grid">
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className="servicos__card animate-fade-up"
-            data-animate
-            onClick={() => openCard(index)}
-          >
-            <div className="servicos__cardInner">
-              {/* Frente */}
-              <div className="servicos__cardFront">
-                <h3>{service.title}</h3>
-                <span>{service.subtitle}</span>
-                <small className="servicos__hint">Toque para ver</small>
-              </div>
+      <div className='container'>
 
-              {/* Verso */}
-              <div className="servicos__cardBack">
-                <p>{service.description}</p>
-                <a href="#contato" className="servicos__cta">
-                  Solicitar orçamento
-                </a>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+        {/* TOP */}
+        <div className='servicesTop'>
 
-      {mobileIndex !== null && (
-        <div className="servicos__modal hui-container">
-          <button className="servicos__close" onClick={closeMobile}>
-            ✕
-          </button>
+          <span className='servicesLabel'>
+            Expertise Técnica
+          </span>
 
-          <div className="servicos__modalContent">
-            <h3>{services[mobileIndex].title}</h3>
+          <h2 className='servicesTitle'>
+            Soluções completas
+            <span>
+              para engenharia
+              e infraestrutura.
+            </span>
+          </h2>
 
-            <Image
-              src={services[mobileIndex].image}
-              alt={services[mobileIndex].title}
-              width={800}
-              height={500}
-            />
-
-            <p>{services[mobileIndex].description}</p>
-
-            <a
-              href="#contato"
-              className="servicos__cta servicos__cta--full"
-              onClick={closeMobile}
-            >
-              Solicitar orçamento
-            </a>
-          </div>
         </div>
-      )}
+
+        {/* LIST */}
+        <div className='servicesList'>
+
+          {services.map((service, index) => {
+            const isActive = active === index;
+
+            return (
+              <motion.div
+                key={service.title}
+                className={`serviceItem ${isActive ? 'serviceItemActive' : ''}`}
+                initial={{
+                  opacity: 0,
+                  y: 40,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                viewport={{
+                  once: true,
+                  amount: 0.2,
+                }}
+                transition={{
+                  duration: 0.9,
+                  delay: index * 0.08,
+                  ease: easing,
+                }}
+              >
+
+                {/* HEADER */}
+                <button
+                  className='serviceHeader'
+                  onClick={() =>
+                    setActive(isActive ? null : index)
+                  }
+                >
+
+                  <div className='serviceLeft'>
+
+                    <span className='serviceNumber'>
+                      {service.number}
+                    </span>
+
+                    <div className='serviceContent'>
+                      <h3>{service.title}</h3>
+
+                      <p>
+                        {service.description}
+                      </p>
+                    </div>
+
+                  </div>
+
+                  <div className='serviceIcon'>
+                    <span />
+                    <span />
+                  </div>
+
+                </button>
+
+                {/* CONTENT */}
+                <AnimatePresence initial={false}>
+
+                  {isActive && (
+                    <motion.div
+                      className='serviceBody'
+                      initial={{
+                        height: 0,
+                        opacity: 0,
+                      }}
+                      animate={{
+                        height: 'auto',
+                        opacity: 1,
+                      }}
+                      exit={{
+                        height: 0,
+                        opacity: 0,
+                      }}
+                      transition={{
+                        duration: 0.6,
+                        ease: easing,
+                      }}
+                    >
+
+                      <div className='serviceGrid'>
+
+                        {service.items.map((item) => (
+                          <motion.div
+                            key={item}
+                            className='serviceTag'
+                            initial={{
+                              opacity: 0,
+                              y: 16,
+                            }}
+                            animate={{
+                              opacity: 1,
+                              y: 0,
+                            }}
+                            transition={{
+                              duration: 0.5,
+                              ease: easing,
+                            }}
+                          >
+                            {item}
+                          </motion.div>
+                        ))}
+
+                      </div>
+
+                    </motion.div>
+                  )}
+
+                </AnimatePresence>
+
+              </motion.div>
+            );
+          })}
+
+        </div>
+
+      </div>
+
     </section>
   );
 }

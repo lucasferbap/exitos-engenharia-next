@@ -1,246 +1,266 @@
 @use "../../styles/global" as *;
 
 .about {
-    padding-top: $space-xl * 2;
-    gap: $space-xl;
-    display: flex;
-    flex-direction: column;
-    
-    @include respond(tablet) {
-        padding-top: $space-xxl * 2;
-        gap: $space-xxl * 1.5;
-    }
-}
-
-/* espaçamento entre os blocos */
-.about > div + div {
-    margin-top: $space-xxl;
-}
-
-/* ==========================
-   HERO SOBRE NÓS
-========================== */
-
-.aboutHero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 80px;
     position: relative;
 
-    @media (max-width: 900px) {
+    background: #111111;
+
+    overflow: hidden;
+}
+
+/* ========================================
+   TOP
+======================================== */
+
+.aboutTop {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+
+    gap: 48px;
+
+    margin-bottom: 96px;
+
+    @media (max-width: 992px) {
         grid-template-columns: 1fr;
-        gap: 40px;
+
+        margin-bottom: 72px;
     }
+}
 
-    /* TEXTO */
-    &__content {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        max-width: 520px;
-        z-index: 2;
-        color: $color-dark;
+/* ========================================
+   LABEL
+======================================== */
 
-        h1 {
-            font-size: 2.4rem;
-            line-height: 1.1;
-            font-weight: 800;
-            letter-spacing: -0.5px;
-            text-transform: uppercase;
-        }
+.aboutLabel {
+    position: relative;
 
-        p {
-            font-size: 1.05rem;
-            line-height: 1.6;
-            color: $color-secondary;
-        }
+    display: inline-flex;
+    align-items: center;
 
-        @media (max-width: 900px) {
-            text-align: center;
-            align-items: center;
+    height: fit-content;
 
-            h1 {
-                font-size: 2rem;
-            }
-        }
-    }
+    padding-left: 64px;
 
-    &__tag {
-        width: fit-content;
-        padding: 6px 14px;
-        border-radius: 999px;
-        font-size: 0.7rem;
-        font-weight: 600;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        background: rgba(0, 0, 0, 0.05);
-        color: $color-primary;
-    }
+    color: rgba(255, 255, 255, 0.72);
 
-    /* IMAGEM */
-    &__imgWrapper {
-        position: relative;
-        width: 100%;
-        max-width: 680px;
-        height: 520px;
-        border-radius: 16px;
-        overflow: hidden;
-        justify-self: end;
+    font-size: 12px;
+    font-weight: 500;
 
-        @media (max-width: 1200px) {
-            height: 460px;
-            max-width: 600px;
-        }
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
 
-        @media (max-width: 900px) {
-            width: 100%;
-            height: auto;
-            max-width: 100%;
-        }
-    }
+    &::before {
+        content: "";
 
-    &__bg {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 16px;
-        display: block;
-    }
-
-    &__overlay {
         position: absolute;
-        inset: 0;
-        z-index: 1;
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.25), transparent);
+        left: 0;
+
+        width: 48px;
+        height: 1px;
+
+        background: $color-accent;
     }
 }
 
-/* ==========================
-   DIFERENCIAIS
-========================== */
+/* ========================================
+   HEADLINE
+======================================== */
 
-.diferenciais {
-    text-align: center;
+.aboutHeadline {
+    display: flex;
+    flex-direction: column;
 
-    h2 {
-        font-size: 2.1rem;
-        margin-bottom: $h2-spacing-bottom;
-        color: $color-dark;
+    max-width: 920px;
+
+    font-size: clamp(42px, 6vw, 88px);
+
+    line-height: 0.92;
+    letter-spacing: -0.05em;
+
+    color: $color-white;
+
+    span {
+        color: rgba(255, 255, 255, 0.58);
     }
 
-    &__grid {
-        display: grid;
-        gap: 30px;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-
-    &__item {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding: $space-lg;
-        background: $color-light;
-        border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(15, 23, 42, 0.06);
-        transition:
-            transform 0.3s ease,
-            box-shadow 0.3s ease;
-
-        &:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
-        }
-
-        svg {
-            font-size: 32px;
-            color: $color-primary;
-            margin-bottom: 12px;
-        }
-
-        p {
-            color: $color-secondary;
-            font-size: 0.98rem;
-        }
+    @media (max-width: 768px) {
+        font-size: 52px;
     }
 }
 
-/* ==========================
-   HISTÓRIA
-========================== */
+/* ========================================
+   CONTENT
+======================================== */
 
-.history {
-    &__container {
-        max-width: 900px;
-        margin: 0 auto;
-        text-align: center;
+.aboutContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-        h2 {
-            font-size: 2.1rem;
-            color: $color-dark;
-            margin-bottom: $space-md;
-        }
+    gap: 72px;
 
-        p {
-            font-size: 1.02rem;
-            color: $color-secondary;
-            line-height: 1.7;
-            margin-bottom: $space-md;
-        }
+    align-items: center;
+
+    @media (max-width: 992px) {
+        grid-template-columns: 1fr;
+
+        gap: 56px;
     }
 }
 
-/* ==========================
-   PRINCÍPIOS (MISSÃO / VISÃO / VALORES)
-========================== */
+/* ========================================
+   TEXT
+======================================== */
 
-.principles {
-    text-align: center;
-
-    &__title {
-        font-size: 2.1rem;
-        color: $color-dark;
-        margin-bottom: $h2-spacing-bottom;
-    }
-
-    &__grid {
-        display: flex;
-        gap: 40px;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    &__item {
-        width: 280px;
-        padding: $space-lg;
-        background: #ffffff;
-        border-radius: 14px;
-        box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08);
-        transition:
-            transform 0.3s ease,
-            box-shadow 0.3s ease;
-        transform-origin: bottom;
-
-        &:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
-        }
-    }
-
-    &__icon {
-        font-size: 40px;
-        color: $color-primary;
-        margin-bottom: 16px;
-    }
-
-    h3 {
-        font-size: 1.2rem;
-        color: $color-dark;
-        margin-bottom: $space-sm;
-    }
+.aboutText {
+    max-width: 560px;
 
     p {
-        color: $color-secondary;
-        font-size: 0.98rem;
+        font-size: 18px;
+
+        line-height: 1.9;
+
+        color: rgba(255, 255, 255, 0.72);
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
     }
+
+    @media (max-width: 768px) {
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+/* ========================================
+   NUMBERS
+======================================== */
+
+.aboutNumbers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    margin-top: 56px;
+}
+
+.aboutNumberItem {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    strong {
+        font-family: $font-title;
+
+        font-size: 52px;
+        font-weight: 600;
+
+        line-height: 0.9;
+
+        color: $color-white;
+    }
+
+    span {
+        color: rgba(255, 255, 255, 0.58);
+
+        font-size: 14px;
+
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    }
+}
+
+/* ========================================
+   VISUAL
+======================================== */
+
+.aboutVisual {
+    position: relative;
+}
+
+.aboutImageWrapper {
+    position: relative;
+
+    width: 100%;
+    height: 720px;
+
+    overflow: hidden;
+
+    @media (max-width: 768px) {
+        height: 520px;
+    }
+}
+
+.aboutImage {
+    object-fit: cover;
+
+    filter: grayscale(10%) brightness(0.78) contrast(1.05);
+
+    transition:
+        transform 0.8s ease,
+        filter 0.8s ease;
+
+    &:hover {
+        transform: scale(1.04);
+
+        filter: grayscale(0%) brightness(0.92) contrast(1.05);
+    }
+}
+
+/* ========================================
+   FLOATING CARD
+======================================== */
+
+.aboutFloatingCard {
+    position: absolute;
+    left: -48px;
+    bottom: 48px;
+
+    width: 320px;
+
+    padding: 32px;
+
+    background: rgba(20, 20, 20, 0.94);
+
+    backdrop-filter: blur(16px);
+
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    @media (max-width: 992px) {
+        left: 24px;
+        bottom: 24px;
+    }
+
+    @media (max-width: 768px) {
+        width: calc(100% - 48px);
+    }
+
+    strong {
+        display: block;
+
+        font-family: $font-title;
+
+        font-size: 28px;
+        font-weight: 600;
+
+        line-height: 1.1;
+
+        color: $color-white;
+    }
+}
+
+.aboutFloatingLabel {
+    display: inline-flex;
+    align-items: center;
+
+    margin-bottom: 20px;
+
+    color: rgba(255, 255, 255, 0.58);
+
+    font-size: 11px;
+    font-weight: 500;
+
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
 }
